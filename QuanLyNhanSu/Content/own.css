@@ -1,0 +1,69 @@
+﻿body {
+}
+.col-md-4-full-width{
+    width: 100%;
+}
+
+.rb-row{
+    margin-top: 20px;
+    background-color: #eeeeee;
+}
+
+.rbRadioButtonList tbody tr td label{
+    font-weight: normal;
+}
+
+.rbCheckBox label{
+    font-weight: normal;
+}
+
+.rbButtons{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-md-4-full-width h2{
+    text-align: center;
+}
+
+.col-md-4-full-width hr{
+    width: 100%;
+    border-width: 4px;
+    border-color: black;
+    border-style: double;
+}
+
+.rbTable{
+    width: 100%;
+}
+.rbTable tbody tr td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rbTableCellLabel{
+    text-align: right;
+    width: 45%;
+}
+
+.AlignRightCell{
+    text-align: right;
+}
+
+.rbRadTextBox{
+    width: 100% !important;
+    max-width: 20em !important;
+}
+
+.rcTable{
+    width: 85% !important;
+    max-width: 20em !important;
+}
+
+.rgFilterBox{
+    width: 100% !important;
+    max-width: none !important;
+    font-style: italic;
+    text-align: center;
+}

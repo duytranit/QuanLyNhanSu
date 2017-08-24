@@ -1,0 +1,1574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeeManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="EmployeeManagementEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BacLuongs" EntityType="EmployeeManagementModel.BacLuong" />
+    <EntitySet Name="ChinhSaches" EntityType="EmployeeManagementModel.ChinhSach" />
+    <EntitySet Name="ChinhTriXaHois" EntityType="EmployeeManagementModel.ChinhTriXaHois" />
+    <EntitySet Name="ChucVus" EntityType="EmployeeManagementModel.ChucVu" />
+    <EntitySet Name="ChuyenMons" EntityType="EmployeeManagementModel.ChuyenMon" />
+    <EntitySet Name="DanhGias" EntityType="EmployeeManagementModel.DanhGia" />
+    <EntitySet Name="DanTocs" EntityType="EmployeeManagementModel.DanToc" />
+    <EntitySet Name="DonVis" EntityType="EmployeeManagementModel.DonVi" />
+    <EntitySet Name="GiaoDucPhoThongs" EntityType="EmployeeManagementModel.GiaoDucPhoThong" />
+    <EntitySet Name="KeKhais" EntityType="EmployeeManagementModel.KeKhai" />
+    <EntitySet Name="KhenThuongs" EntityType="EmployeeManagementModel.KhenThuong" />
+    <EntitySet Name="KyLuats" EntityType="EmployeeManagementModel.KyLuat" />
+    <EntitySet Name="LoaiGiaiTrinhs" EntityType="EmployeeManagementModel.LoaiGiaiTrinh" />
+    <EntitySet Name="LoaiQuanHes" EntityType="EmployeeManagementModel.LoaiQuanHe" />
+    <EntitySet Name="LyLuanChinhTris" EntityType="EmployeeManagementModel.LyLuanChinhTri" />
+    <EntitySet Name="Nhas" EntityType="EmployeeManagementModel.Nha" />
+    <EntitySet Name="NhomMaus" EntityType="EmployeeManagementModel.NhomMau" />
+    <EntitySet Name="PhongTangDanhHieux" EntityType="EmployeeManagementModel.PhongTangDanhHieu" />
+    <EntitySet Name="QuanHeCongTacs" EntityType="EmployeeManagementModel.QuanHeCongTac" />
+    <EntitySet Name="QuanHes" EntityType="EmployeeManagementModel.QuanHe" />
+    <EntitySet Name="QuanLyNhaNuocs" EntityType="EmployeeManagementModel.QuanLyNhaNuoc" />
+    <EntitySet Name="QuaTrinhDaoTaos" EntityType="EmployeeManagementModel.QuaTrinhDaoTao" />
+    <EntitySet Name="ThamGiaChinhTriXaHois" EntityType="EmployeeManagementModel.ThamGiaChinhTriXaHois" />
+    <EntitySet Name="TonGiaos" EntityType="EmployeeManagementModel.TonGiao" />
+    <EntitySet Name="TrinhDoNgoaiNgus" EntityType="EmployeeManagementModel.TrinhDoNgoaiNgu" />
+    <EntitySet Name="TrinhDoTinHocs" EntityType="EmployeeManagementModel.TrinhDoTinHoc" />
+    <AssociationSet Name="FK_ThamGiaChinhTriXaHoi_ChinhTriXaHoi" Association="EmployeeManagementModel.FK_ThamGiaChinhTriXaHoi_ChinhTriXaHoi">
+      <End Role="ChinhTriXaHois" EntitySet="ChinhTriXaHois" />
+      <End Role="ThamGiaChinhTriXaHois" EntitySet="ThamGiaChinhTriXaHois" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DonVi_TrucThuoc" Association="EmployeeManagementModel.FK_DonVi_TrucThuoc">
+      <End Role="DonVi" EntitySet="DonVis" />
+      <End Role="DonVi1" EntitySet="DonVis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nha_KeKhai" Association="EmployeeManagementModel.FK_Nha_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="Nha" EntitySet="Nhas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuanHe_LoaiQuanHe" Association="EmployeeManagementModel.FK_QuanHe_LoaiQuanHe">
+      <End Role="LoaiQuanHe" EntitySet="LoaiQuanHes" />
+      <End Role="QuanHe" EntitySet="QuanHes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuanHeCongTac_QuanHe" Association="EmployeeManagementModel.FK_QuanHeCongTac_QuanHe">
+      <End Role="QuanHe" EntitySet="QuanHes" />
+      <End Role="QuanHeCongTac" EntitySet="QuanHeCongTacs" />
+    </AssociationSet>
+    <EntitySet Name="KeKhaiCons" EntityType="EmployeeManagementModel.KeKhaiCon" />
+    <AssociationSet Name="FK_KeKhaiCon_KeKhai" Association="EmployeeManagementModel.FK_KeKhaiCon_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="KeKhaiCon" EntitySet="KeKhaiCons" />
+    </AssociationSet>
+    <EntitySet Name="Dats" EntityType="EmployeeManagementModel.Dat" />
+    <AssociationSet Name="FK_Dat_KeKhai" Association="EmployeeManagementModel.FK_Dat_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="Dat" EntitySet="Dats" />
+    </AssociationSet>
+    <EntitySet Name="Tiens" EntityType="EmployeeManagementModel.Tien" />
+    <AssociationSet Name="FK_Tien_KeKhai" Association="EmployeeManagementModel.FK_Tien_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="Tien" EntitySet="Tiens" />
+    </AssociationSet>
+    <EntitySet Name="DongSans" EntityType="EmployeeManagementModel.DongSan" />
+    <AssociationSet Name="FK_DongSans_KeKhai" Association="EmployeeManagementModel.FK_DongSans_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="DongSan" EntitySet="DongSans" />
+    </AssociationSet>
+    <EntitySet Name="DaQuis" EntityType="EmployeeManagementModel.DaQui" />
+    <AssociationSet Name="FK_DaQui_KeKhai" Association="EmployeeManagementModel.FK_DaQui_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="DaQui" EntitySet="DaQuis" />
+    </AssociationSet>
+    <EntitySet Name="TaiSanKhacs" EntityType="EmployeeManagementModel.TaiSanKhac" />
+    <AssociationSet Name="FK_TaiSanKhac_KeKhai" Association="EmployeeManagementModel.FK_TaiSanKhac_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="TaiSanKhac" EntitySet="TaiSanKhacs" />
+    </AssociationSet>
+    <EntitySet Name="KhoanNos" EntityType="EmployeeManagementModel.KhoanNo" />
+    <AssociationSet Name="FK_KhoanNo_KeKhai" Association="EmployeeManagementModel.FK_KhoanNo_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="KhoanNo" EntitySet="KhoanNos" />
+    </AssociationSet>
+    <EntitySet Name="TaiSanNuocNgoais" EntityType="EmployeeManagementModel.TaiSanNuocNgoai" />
+    <AssociationSet Name="FK_TaiSanNuocNgoai_KeKhai" Association="EmployeeManagementModel.FK_TaiSanNuocNgoai_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="TaiSanNuocNgoai" EntitySet="TaiSanNuocNgoais" />
+    </AssociationSet>
+    <EntitySet Name="ThuNhaps" EntityType="EmployeeManagementModel.ThuNhap" />
+    <AssociationSet Name="FK_ThuNhap_KeKhai" Association="EmployeeManagementModel.FK_ThuNhap_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="ThuNhap" EntitySet="ThuNhaps" />
+    </AssociationSet>
+    <EntitySet Name="GiaiTrinhs" EntityType="EmployeeManagementModel.GiaiTrinh" />
+    <AssociationSet Name="FK_GiaiTrinh_KeKhai" Association="EmployeeManagementModel.FK_GiaiTrinh_KeKhai">
+      <End Role="KeKhai" EntitySet="KeKhais" />
+      <End Role="GiaiTrinh" EntitySet="GiaiTrinhs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GiaiTrinh_LoaiGiaiTrinh" Association="EmployeeManagementModel.FK_GiaiTrinh_LoaiGiaiTrinh">
+      <End Role="LoaiGiaiTrinh" EntitySet="LoaiGiaiTrinhs" />
+      <End Role="GiaiTrinh" EntitySet="GiaiTrinhs" />
+    </AssociationSet>
+    <EntitySet Name="HeSoLuongs" EntityType="EmployeeManagementModel.HeSoLuong" />
+    <AssociationSet Name="FK_HeSoLuong_BacLuong" Association="EmployeeManagementModel.FK_HeSoLuong_BacLuong">
+      <End Role="BacLuong" EntitySet="BacLuongs" />
+      <End Role="HeSoLuong" EntitySet="HeSoLuongs" />
+    </AssociationSet>
+    <EntitySet Name="DanhGiaLaoDongs" EntityType="EmployeeManagementModel.DanhGiaLaoDong" />
+    <EntitySet Name="DanhGiaVienChucs" EntityType="EmployeeManagementModel.DanhGiaVienChuc" />
+    <EntitySet Name="DanhGiaDangViens" EntityType="EmployeeManagementModel.DanhGiaDangVien" />
+    <EntitySet Name="Accounts" EntityType="EmployeeManagementModel.Account" />
+    <EntitySet Name="LoaiChamCongs" EntityType="EmployeeManagementModel.LoaiChamCong" />
+    <EntitySet Name="PhuTrachChamCongs" EntityType="EmployeeManagementModel.PhuTrachChamCong" />
+    <AssociationSet Name="FK_PhuTrachChamCong_Account" Association="EmployeeManagementModel.FK_PhuTrachChamCong_Account">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="PhuTrachChamCong" EntitySet="PhuTrachChamCongs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhuTrachChamCong_DonVi" Association="EmployeeManagementModel.FK_PhuTrachChamCong_DonVi">
+      <End Role="DonVi" EntitySet="DonVis" />
+      <End Role="PhuTrachChamCong" EntitySet="PhuTrachChamCongs" />
+    </AssociationSet>
+    <EntitySet Name="ChamCongs" EntityType="EmployeeManagementModel.ChamCong" />
+    <AssociationSet Name="FK_ChamCong_LoaiChamCong" Association="EmployeeManagementModel.FK_ChamCong_LoaiChamCong">
+      <End Role="LoaiChamCong" EntitySet="LoaiChamCongs" />
+      <End Role="ChamCong" EntitySet="ChamCongs" />
+    </AssociationSet>
+    <EntitySet Name="NhanViens" EntityType="EmployeeManagementModel.NhanVien" />
+    <AssociationSet Name="FK_Account_NhanVien" Association="EmployeeManagementModel.FK_Account_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="Account" EntitySet="Accounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChinhSach_NhanVien" Association="EmployeeManagementModel.FK_ChinhSach_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="ChinhSach" EntitySet="ChinhSaches" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NhanVien_ChuyenMon" Association="EmployeeManagementModel.FK_NhanVien_ChuyenMon">
+      <End Role="ChuyenMon" EntitySet="ChuyenMons" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DanhGiaDangVien_NhanVien" Association="EmployeeManagementModel.FK_DanhGiaDangVien_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="DanhGiaDangVien" EntitySet="DanhGiaDangViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DanhGiaLaoDong_NhanVien" Association="EmployeeManagementModel.FK_DanhGiaLaoDong_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="DanhGiaLaoDong" EntitySet="DanhGiaLaoDongs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DanhGia_NhanVien" Association="EmployeeManagementModel.FK_DanhGia_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="DanhGia" EntitySet="DanhGias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DanhGiaVienChuc_NhanVien" Association="EmployeeManagementModel.FK_DanhGiaVienChuc_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="DanhGiaVienChuc" EntitySet="DanhGiaVienChucs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NhanVien_DanToc" Association="EmployeeManagementModel.FK_NhanVien_DanToc">
+      <End Role="DanToc" EntitySet="DanTocs" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NhanVien_GiaoDucPhoThong" Association="EmployeeManagementModel.FK_NhanVien_GiaoDucPhoThong">
+      <End Role="GiaoDucPhoThong" EntitySet="GiaoDucPhoThongs" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KeKhai_NhanVien" Association="EmployeeManagementModel.FK_KeKhai_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="KeKhai" EntitySet="KeKhais" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KhenThuong_NhanVien" Association="EmployeeManagementModel.FK_KhenThuong_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="KhenThuong" EntitySet="KhenThuongs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KyLuat_NhanVien" Association="EmployeeManagementModel.FK_KyLuat_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="KyLuat" EntitySet="KyLuats" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NhanVien_LyLuanChinhTri" Association="EmployeeManagementModel.FK_NhanVien_LyLuanChinhTri">
+      <End Role="LyLuanChinhTri" EntitySet="LyLuanChinhTris" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NhanVien_NhomMau" Association="EmployeeManagementModel.FK_NhanVien_NhomMau">
+      <End Role="NhomMau" EntitySet="NhomMaus" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NhanVien_QuanLyNhaNuoc" Association="EmployeeManagementModel.FK_NhanVien_QuanLyNhaNuoc">
+      <End Role="QuanLyNhaNuoc" EntitySet="QuanLyNhaNuocs" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NhanVien_TonGiao" Association="EmployeeManagementModel.FK_NhanVien_TonGiao">
+      <End Role="TonGiao" EntitySet="TonGiaos" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhongTangDanhHieu_NhanVien" Association="EmployeeManagementModel.FK_PhongTangDanhHieu_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="PhongTangDanhHieu" EntitySet="PhongTangDanhHieux" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuanHe_NhanVien" Association="EmployeeManagementModel.FK_QuanHe_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="QuanHe" EntitySet="QuanHes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuaTrinhDaoTao_NhanVien" Association="EmployeeManagementModel.FK_QuaTrinhDaoTao_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="QuaTrinhDaoTao" EntitySet="QuaTrinhDaoTaos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ThamGiaChinhTriXaHoi_NhanVien" Association="EmployeeManagementModel.FK_ThamGiaChinhTriXaHoi_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="ThamGiaChinhTriXaHois" EntitySet="ThamGiaChinhTriXaHois" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrinhDoNgoaiNgu_NhanVien" Association="EmployeeManagementModel.FK_TrinhDoNgoaiNgu_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="TrinhDoNgoaiNgu" EntitySet="TrinhDoNgoaiNgus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrinhDoTinHoc_NhanVien" Association="EmployeeManagementModel.FK_TrinhDoTinHoc_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="TrinhDoTinHoc" EntitySet="TrinhDoTinHocs" />
+    </AssociationSet>
+    <EntitySet Name="Ngaches" EntityType="EmployeeManagementModel.Ngach" />
+    <AssociationSet Name="FK_HeSoLuong_Ngach" Association="EmployeeManagementModel.FK_HeSoLuong_Ngach">
+      <End Role="Ngach" EntitySet="Ngaches" />
+      <End Role="HeSoLuong" EntitySet="HeSoLuongs" />
+    </AssociationSet>
+    <EntitySet Name="LamViecs" EntityType="EmployeeManagementModel.LamViec" />
+    <AssociationSet Name="FK_ChamCong_LamViec" Association="EmployeeManagementModel.FK_ChamCong_LamViec">
+      <End Role="LamViec" EntitySet="LamViecs" />
+      <End Role="ChamCong" EntitySet="ChamCongs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LamViec_ChucVu" Association="EmployeeManagementModel.FK_LamViec_ChucVu">
+      <End Role="ChucVu" EntitySet="ChucVus" />
+      <End Role="LamViec" EntitySet="LamViecs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LamViec_DonVi" Association="EmployeeManagementModel.FK_LamViec_DonVi">
+      <End Role="DonVi" EntitySet="DonVis" />
+      <End Role="LamViec" EntitySet="LamViecs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LamViec_HeSoLuong" Association="EmployeeManagementModel.FK_LamViec_HeSoLuong">
+      <End Role="HeSoLuong" EntitySet="HeSoLuongs" />
+      <End Role="LamViec" EntitySet="LamViecs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LamViec_LamViec" Association="EmployeeManagementModel.FK_LamViec_LamViec">
+      <End Role="LamViec" EntitySet="LamViecs" />
+      <End Role="LamViec1" EntitySet="LamViecs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LamViec_NhanVien" Association="EmployeeManagementModel.FK_LamViec_NhanVien">
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="LamViec" EntitySet="LamViecs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BacLuong">
+    <Key>
+      <PropertyRef Name="BLID" />
+    </Key>
+    <Property Name="BLID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BLTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="HeSoLuongs" Relationship="EmployeeManagementModel.FK_HeSoLuong_BacLuong" FromRole="BacLuong" ToRole="HeSoLuong" />
+  </EntityType>
+  <EntityType Name="ChinhSach">
+    <Key>
+      <PropertyRef Name="CSID" />
+    </Key>
+    <Property Name="CSID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CSTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CSNgay" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_ChinhSach_NhanVien" FromRole="ChinhSach" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="ChinhTriXaHois">
+    <Key>
+      <PropertyRef Name="CTXHID" />
+    </Key>
+    <Property Name="CTXHID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CTXHTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CTXHDiaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CTXHDienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CTXHFax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CTXHEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CTXHWebsite" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CTXHGioiThieu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ThamGiaChinhTriXaHois" Relationship="EmployeeManagementModel.FK_ThamGiaChinhTriXaHoi_ChinhTriXaHoi" FromRole="ChinhTriXaHois" ToRole="ThamGiaChinhTriXaHois" />
+  </EntityType>
+  <EntityType Name="ChucVu">
+    <Key>
+      <PropertyRef Name="CVID" />
+    </Key>
+    <Property Name="CVID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CVTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LamViecs" Relationship="EmployeeManagementModel.FK_LamViec_ChucVu" FromRole="ChucVu" ToRole="LamViec" />
+  </EntityType>
+  <EntityType Name="ChuyenMon">
+    <Key>
+      <PropertyRef Name="CMID" />
+    </Key>
+    <Property Name="CMID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CMTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NhanViens" Relationship="EmployeeManagementModel.FK_NhanVien_ChuyenMon" FromRole="ChuyenMon" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="DanhGia">
+    <Key>
+      <PropertyRef Name="DGID" />
+    </Key>
+    <Property Name="DGID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DGNoiDung" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGNgay" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_DanhGia_NhanVien" FromRole="DanhGia" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="DanToc">
+    <Key>
+      <PropertyRef Name="DTID" />
+    </Key>
+    <Property Name="DTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DTTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DTThieuSo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="NhanViens" Relationship="EmployeeManagementModel.FK_NhanVien_DanToc" FromRole="DanToc" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="DonVi">
+    <Key>
+      <PropertyRef Name="DVID" />
+    </Key>
+    <Property Name="DVID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DVTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DVTrucThuocID" Type="Int32" />
+    <Property Name="DVTrangThai" Type="Boolean" Nullable="false" />
+    <Property Name="DVNoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DVBienChe" Type="Int32" />
+    <Property Name="DVSDT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DVDiaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DonVis1" Relationship="EmployeeManagementModel.FK_DonVi_TrucThuoc" FromRole="DonVi" ToRole="DonVi1" />
+    <NavigationProperty Name="DonVi1" Relationship="EmployeeManagementModel.FK_DonVi_TrucThuoc" FromRole="DonVi1" ToRole="DonVi" />
+    <NavigationProperty Name="PhuTrachChamCongs" Relationship="EmployeeManagementModel.FK_PhuTrachChamCong_DonVi" FromRole="DonVi" ToRole="PhuTrachChamCong" />
+    <NavigationProperty Name="LamViecs" Relationship="EmployeeManagementModel.FK_LamViec_DonVi" FromRole="DonVi" ToRole="LamViec" />
+  </EntityType>
+  <EntityType Name="GiaoDucPhoThong">
+    <Key>
+      <PropertyRef Name="GDPTID" />
+    </Key>
+    <Property Name="GDPTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GDPTTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NhanViens" Relationship="EmployeeManagementModel.FK_NhanVien_GiaoDucPhoThong" FromRole="GiaoDucPhoThong" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="KeKhai">
+    <Key>
+      <PropertyRef Name="KKID" />
+    </Key>
+    <Property Name="KKID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KKNam" Type="Int32" Nullable="false" />
+    <Property Name="KKNgayKeKhai" Type="DateTime" Precision="0" />
+    <Property Name="KKNgayNhap" Type="DateTime" Precision="0" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <Property Name="KKChucVu" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKCoQuan" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKHoKhau" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKChoO" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKVoChong" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKVCDOB" Type="DateTime" Precision="0" />
+    <Property Name="KKVCChucVu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKVCCoQuan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKVCHoKhau" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKVCChoO" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Nhas" Relationship="EmployeeManagementModel.FK_Nha_KeKhai" FromRole="KeKhai" ToRole="Nha" />
+    <NavigationProperty Name="KeKhaiCons" Relationship="EmployeeManagementModel.FK_KeKhaiCon_KeKhai" FromRole="KeKhai" ToRole="KeKhaiCon" />
+    <NavigationProperty Name="Dats" Relationship="EmployeeManagementModel.FK_Dat_KeKhai" FromRole="KeKhai" ToRole="Dat" />
+    <NavigationProperty Name="Tiens" Relationship="EmployeeManagementModel.FK_Tien_KeKhai" FromRole="KeKhai" ToRole="Tien" />
+    <NavigationProperty Name="DongSans" Relationship="EmployeeManagementModel.FK_DongSans_KeKhai" FromRole="KeKhai" ToRole="DongSan" />
+    <NavigationProperty Name="DaQuis" Relationship="EmployeeManagementModel.FK_DaQui_KeKhai" FromRole="KeKhai" ToRole="DaQui" />
+    <NavigationProperty Name="TaiSanKhacs" Relationship="EmployeeManagementModel.FK_TaiSanKhac_KeKhai" FromRole="KeKhai" ToRole="TaiSanKhac" />
+    <NavigationProperty Name="KhoanNos" Relationship="EmployeeManagementModel.FK_KhoanNo_KeKhai" FromRole="KeKhai" ToRole="KhoanNo" />
+    <NavigationProperty Name="TaiSanNuocNgoais" Relationship="EmployeeManagementModel.FK_TaiSanNuocNgoai_KeKhai" FromRole="KeKhai" ToRole="TaiSanNuocNgoai" />
+    <NavigationProperty Name="ThuNhaps" Relationship="EmployeeManagementModel.FK_ThuNhap_KeKhai" FromRole="KeKhai" ToRole="ThuNhap" />
+    <NavigationProperty Name="GiaiTrinhs" Relationship="EmployeeManagementModel.FK_GiaiTrinh_KeKhai" FromRole="KeKhai" ToRole="GiaiTrinh" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_KeKhai_NhanVien" FromRole="KeKhai" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="KhenThuong">
+    <Key>
+      <PropertyRef Name="KTID" />
+    </Key>
+    <Property Name="KTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KTNgay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="KTNoiDung" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KTCapQuyetDinh" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_KhenThuong_NhanVien" FromRole="KhenThuong" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="KyLuat">
+    <Key>
+      <PropertyRef Name="KLID" />
+    </Key>
+    <Property Name="KLID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KLNgay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="KLNoiDung" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KLCap" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_KyLuat_NhanVien" FromRole="KyLuat" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="LoaiGiaiTrinh">
+    <Key>
+      <PropertyRef Name="LGTID" />
+    </Key>
+    <Property Name="LGTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LGTTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LGTTenChung" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="GiaiTrinhs" Relationship="EmployeeManagementModel.FK_GiaiTrinh_LoaiGiaiTrinh" FromRole="LoaiGiaiTrinh" ToRole="GiaiTrinh" />
+  </EntityType>
+  <EntityType Name="LoaiQuanHe">
+    <Key>
+      <PropertyRef Name="LQHID" />
+    </Key>
+    <Property Name="LQHID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LQHTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LQHDuyNhat" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="QuanHes" Relationship="EmployeeManagementModel.FK_QuanHe_LoaiQuanHe" FromRole="LoaiQuanHe" ToRole="QuanHe" />
+  </EntityType>
+  <EntityType Name="LyLuanChinhTri">
+    <Key>
+      <PropertyRef Name="LLCTID" />
+    </Key>
+    <Property Name="LLCTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LLCTTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NhanViens" Relationship="EmployeeManagementModel.FK_NhanVien_LyLuanChinhTri" FromRole="LyLuanChinhTri" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="Nha">
+    <Key>
+      <PropertyRef Name="NHAID" />
+    </Key>
+    <Property Name="NHAID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NHADiaChi" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NHALoai" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NHACap" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NHADienTich" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="NHAGiaTri" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="NHAQuyenSoHuu" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NHAGhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <Property Name="NHAIsNha" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_Nha_KeKhai" FromRole="Nha" ToRole="KeKhai" />
+  </EntityType>
+  <EntityType Name="NhomMau">
+    <Key>
+      <PropertyRef Name="NMID" />
+    </Key>
+    <Property Name="NMID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NMTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NhanViens" Relationship="EmployeeManagementModel.FK_NhanVien_NhomMau" FromRole="NhomMau" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="PhongTangDanhHieu">
+    <Key>
+      <PropertyRef Name="PTDHID" />
+    </Key>
+    <Property Name="PTDHID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <Property Name="PTDHTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PTDHNgay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PTDHHoiDong" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_PhongTangDanhHieu_NhanVien" FromRole="PhongTangDanhHieu" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="QuanHeCongTac">
+    <Key>
+      <PropertyRef Name="QHCTID" />
+    </Key>
+    <Property Name="QHCTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QHCTTuNgay" Type="DateTime" Precision="3" />
+    <Property Name="QHCTDenNgay" Type="DateTime" Precision="3" />
+    <Property Name="QHCTDonVi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="QHCTChucVu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="QHCTNgheNghiep" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="QHCTNoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QHID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="QuanHe" Relationship="EmployeeManagementModel.FK_QuanHeCongTac_QuanHe" FromRole="QuanHeCongTac" ToRole="QuanHe" />
+  </EntityType>
+  <EntityType Name="QuanHe">
+    <Key>
+      <PropertyRef Name="QHID" />
+    </Key>
+    <Property Name="QHID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QHBenVo" Type="Boolean" Nullable="false" />
+    <Property Name="QHTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="QHNgaySinh" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QHGioiTinh" Type="Boolean" Nullable="false" />
+    <Property Name="QHHoKhau" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QHNoiO" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <Property Name="LQHID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="LoaiQuanHe" Relationship="EmployeeManagementModel.FK_QuanHe_LoaiQuanHe" FromRole="QuanHe" ToRole="LoaiQuanHe" />
+    <NavigationProperty Name="QuanHeCongTacs" Relationship="EmployeeManagementModel.FK_QuanHeCongTac_QuanHe" FromRole="QuanHe" ToRole="QuanHeCongTac" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_QuanHe_NhanVien" FromRole="QuanHe" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="QuanLyNhaNuoc">
+    <Key>
+      <PropertyRef Name="QLNNID" />
+    </Key>
+    <Property Name="QLNNID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QLNNTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NhanViens" Relationship="EmployeeManagementModel.FK_NhanVien_QuanLyNhaNuoc" FromRole="QuanLyNhaNuoc" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="QuaTrinhDaoTao">
+    <Key>
+      <PropertyRef Name="QTDTID" />
+    </Key>
+    <Property Name="QTDTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QTDTTruong" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QTDTChuyenNganh" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QTDTTuNgay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QTDTDenNgay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QTDTHinhThuc" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QTDTVanBang" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_QuaTrinhDaoTao_NhanVien" FromRole="QuaTrinhDaoTao" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="ThamGiaChinhTriXaHois">
+    <Key>
+      <PropertyRef Name="TGCTXHID" />
+    </Key>
+    <Property Name="TGCTXHID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <Property Name="CTXHID" Type="Int32" Nullable="false" />
+    <Property Name="TGCTXHTuNgay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TGCTXHDenNgay" Type="DateTime" Precision="3" />
+    <Property Name="TGCTXHChucVu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TGCTXHNoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ChinhTriXaHois" Relationship="EmployeeManagementModel.FK_ThamGiaChinhTriXaHoi_ChinhTriXaHoi" FromRole="ThamGiaChinhTriXaHois" ToRole="ChinhTriXaHois" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_ThamGiaChinhTriXaHoi_NhanVien" FromRole="ThamGiaChinhTriXaHois" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="TonGiao">
+    <Key>
+      <PropertyRef Name="TGID" />
+    </Key>
+    <Property Name="TGID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TGTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NhanViens" Relationship="EmployeeManagementModel.FK_NhanVien_TonGiao" FromRole="TonGiao" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="TrinhDoNgoaiNgu">
+    <Key>
+      <PropertyRef Name="TDNNID" />
+    </Key>
+    <Property Name="TDNNID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TDNNTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TDNNChungChi" Type="Boolean" Nullable="false" />
+    <Property Name="TDNNTiengDanToc" Type="Boolean" Nullable="false" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_TrinhDoNgoaiNgu_NhanVien" FromRole="TrinhDoNgoaiNgu" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="TrinhDoTinHoc">
+    <Key>
+      <PropertyRef Name="TDTHID" />
+    </Key>
+    <Property Name="TDTHID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <Property Name="TDTHTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TDChungChi" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_TrinhDoTinHoc_NhanVien" FromRole="TrinhDoTinHoc" ToRole="NhanVien" />
+  </EntityType>
+  <Association Name="FK_ThamGiaChinhTriXaHoi_ChinhTriXaHoi">
+    <End Type="EmployeeManagementModel.ChinhTriXaHois" Role="ChinhTriXaHois" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.ThamGiaChinhTriXaHois" Role="ThamGiaChinhTriXaHois" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChinhTriXaHois">
+        <PropertyRef Name="CTXHID" />
+      </Principal>
+      <Dependent Role="ThamGiaChinhTriXaHois">
+        <PropertyRef Name="CTXHID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DonVi_TrucThuoc">
+    <End Type="EmployeeManagementModel.DonVi" Role="DonVi" Multiplicity="0..1" />
+    <End Type="EmployeeManagementModel.DonVi" Role="DonVi1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonVi">
+        <PropertyRef Name="DVID" />
+      </Principal>
+      <Dependent Role="DonVi1">
+        <PropertyRef Name="DVTrucThuocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nha_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.Nha" Role="Nha" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="Nha">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuanHe_LoaiQuanHe">
+    <End Type="EmployeeManagementModel.LoaiQuanHe" Role="LoaiQuanHe" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.QuanHe" Role="QuanHe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiQuanHe">
+        <PropertyRef Name="LQHID" />
+      </Principal>
+      <Dependent Role="QuanHe">
+        <PropertyRef Name="LQHID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuanHeCongTac_QuanHe">
+    <End Type="EmployeeManagementModel.QuanHe" Role="QuanHe" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.QuanHeCongTac" Role="QuanHeCongTac" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QuanHe">
+        <PropertyRef Name="QHID" />
+      </Principal>
+      <Dependent Role="QuanHeCongTac">
+        <PropertyRef Name="QHID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="KeKhaiCon">
+    <Key>
+      <PropertyRef Name="KKCID" />
+    </Key>
+    <Property Name="KKCID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <Property Name="KKCTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKCDOB" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="KKCHoKhau" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKCChoO" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_KeKhaiCon_KeKhai" FromRole="KeKhaiCon" ToRole="KeKhai" />
+  </EntityType>
+  <Association Name="FK_KeKhaiCon_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.KeKhaiCon" Role="KeKhaiCon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="KeKhaiCon">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Dat">
+    <Key>
+      <PropertyRef Name="DATID" />
+    </Key>
+    <Property Name="DATID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DATDiaChi" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATDienTich" Type="Double" Nullable="false" />
+    <Property Name="DATGiaTri" Type="Int64" Nullable="false" />
+    <Property Name="DATQuyenSoHuu" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DATGhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_Dat_KeKhai" FromRole="Dat" ToRole="KeKhai" />
+  </EntityType>
+  <Association Name="FK_Dat_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.Dat" Role="Dat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="Dat">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Tien">
+    <Key>
+      <PropertyRef Name="TIEID" />
+    </Key>
+    <Property Name="TIEID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TIESoLuong" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TIETienTe" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TIENoiDung" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_Tien_KeKhai" FromRole="Tien" ToRole="KeKhai" />
+  </EntityType>
+  <Association Name="FK_Tien_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.Tien" Role="Tien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="Tien">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DongSan">
+    <Key>
+      <PropertyRef Name="DSID" />
+    </Key>
+    <Property Name="DSID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <Property Name="DSTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DSSoLuong" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="DSGiaTri" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_DongSans_KeKhai" FromRole="DongSan" ToRole="KeKhai" />
+  </EntityType>
+  <Association Name="FK_DongSans_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.DongSan" Role="DongSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="DongSan">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DaQui">
+    <Key>
+      <PropertyRef Name="DQID" />
+    </Key>
+    <Property Name="DQID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DQTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DQSoLuong" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="DQGiaTri" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_DaQui_KeKhai" FromRole="DaQui" ToRole="KeKhai" />
+  </EntityType>
+  <Association Name="FK_DaQui_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.DaQui" Role="DaQui" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="DaQui">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TaiSanKhac">
+    <Key>
+      <PropertyRef Name="TSKID" />
+    </Key>
+    <Property Name="TSKID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TSKTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TSKSoLuong" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="TSKGiaTri" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_TaiSanKhac_KeKhai" FromRole="TaiSanKhac" ToRole="KeKhai" />
+  </EntityType>
+  <Association Name="FK_TaiSanKhac_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.TaiSanKhac" Role="TaiSanKhac" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="TaiSanKhac">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="KhoanNo">
+    <Key>
+      <PropertyRef Name="KNID" />
+    </Key>
+    <Property Name="KNID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KNTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KNSoLuong" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="KNGiaTri" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_KhoanNo_KeKhai" FromRole="KhoanNo" ToRole="KeKhai" />
+  </EntityType>
+  <Association Name="FK_KhoanNo_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.KhoanNo" Role="KhoanNo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="KhoanNo">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TaiSanNuocNgoai">
+    <Key>
+      <PropertyRef Name="TSNNID" />
+    </Key>
+    <Property Name="TSNNID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TSNNTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TSNNSoLuong" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="TSNNGiaTri" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_TaiSanNuocNgoai_KeKhai" FromRole="TaiSanNuocNgoai" ToRole="KeKhai" />
+  </EntityType>
+  <Association Name="FK_TaiSanNuocNgoai_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.TaiSanNuocNgoai" Role="TaiSanNuocNgoai" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="TaiSanNuocNgoai">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ThuNhap">
+    <Key>
+      <PropertyRef Name="TNID" />
+    </Key>
+    <Property Name="TNID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TNTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TNTien" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_ThuNhap_KeKhai" FromRole="ThuNhap" ToRole="KeKhai" />
+  </EntityType>
+  <Association Name="FK_ThuNhap_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.ThuNhap" Role="ThuNhap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="ThuNhap">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="GiaiTrinh">
+    <Key>
+      <PropertyRef Name="GTID" />
+    </Key>
+    <Property Name="GTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GTSoLuong" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="GTIsTang" Type="Boolean" Nullable="false" />
+    <Property Name="GTNoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KKID" Type="Int32" Nullable="false" />
+    <Property Name="LGTID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="KeKhai" Relationship="EmployeeManagementModel.FK_GiaiTrinh_KeKhai" FromRole="GiaiTrinh" ToRole="KeKhai" />
+    <NavigationProperty Name="LoaiGiaiTrinh" Relationship="EmployeeManagementModel.FK_GiaiTrinh_LoaiGiaiTrinh" FromRole="GiaiTrinh" ToRole="LoaiGiaiTrinh" />
+  </EntityType>
+  <Association Name="FK_GiaiTrinh_KeKhai">
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.GiaiTrinh" Role="GiaiTrinh" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KeKhai">
+        <PropertyRef Name="KKID" />
+      </Principal>
+      <Dependent Role="GiaiTrinh">
+        <PropertyRef Name="KKID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GiaiTrinh_LoaiGiaiTrinh">
+    <End Type="EmployeeManagementModel.LoaiGiaiTrinh" Role="LoaiGiaiTrinh" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.GiaiTrinh" Role="GiaiTrinh" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiGiaiTrinh">
+        <PropertyRef Name="LGTID" />
+      </Principal>
+      <Dependent Role="GiaiTrinh">
+        <PropertyRef Name="LGTID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HeSoLuong">
+    <Key>
+      <PropertyRef Name="HSLID" />
+    </Key>
+    <Property Name="HSLID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BLID" Type="Int32" Nullable="false" />
+    <Property Name="NGID" Type="Int32" Nullable="false" />
+    <Property Name="HSLHeSo" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="BacLuong" Relationship="EmployeeManagementModel.FK_HeSoLuong_BacLuong" FromRole="HeSoLuong" ToRole="BacLuong" />
+    <NavigationProperty Name="Ngach" Relationship="EmployeeManagementModel.FK_HeSoLuong_Ngach" FromRole="HeSoLuong" ToRole="Ngach" />
+    <NavigationProperty Name="LamViecs" Relationship="EmployeeManagementModel.FK_LamViec_HeSoLuong" FromRole="HeSoLuong" ToRole="LamViec" />
+  </EntityType>
+  <Association Name="FK_HeSoLuong_BacLuong">
+    <End Type="EmployeeManagementModel.BacLuong" Role="BacLuong" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.HeSoLuong" Role="HeSoLuong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BacLuong">
+        <PropertyRef Name="BLID" />
+      </Principal>
+      <Dependent Role="HeSoLuong">
+        <PropertyRef Name="BLID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DanhGiaLaoDong">
+    <Key>
+      <PropertyRef Name="DGLDID" />
+    </Key>
+    <Property Name="DGLDID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DGLDNam" Type="Int32" Nullable="false" />
+    <Property Name="DGLDChucDanh" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDDonVi" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDNgheNghiep" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDBac" Type="Int32" Nullable="false" />
+    <Property Name="DGLDHeSoLuong" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="DGLDKetQua" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDDaoDuc" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDTrachNhiem" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDNghiaVu" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDUuDiem" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDPhanLoai" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDYKien" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDThongNhat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGLDNgay" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_DanhGiaLaoDong_NhanVien" FromRole="DanhGiaLaoDong" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="DanhGiaVienChuc">
+    <Key>
+      <PropertyRef Name="DGVCID" />
+    </Key>
+    <Property Name="DGVCID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DGVCNam" Type="Int32" Nullable="false" />
+    <Property Name="DGVCChucDanh" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCDonVi" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCNgheNghiep" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCBac" Type="Int32" Nullable="false" />
+    <Property Name="DGVCHeSoLuong" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="DGVCKetQua" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCDaoDuc" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCTrachNhiem" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCNghiaVu" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCUuDiem" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCPhanLoai" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCYKien" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCThongNhat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGVCNgay" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_DanhGiaVienChuc_NhanVien" FromRole="DanhGiaVienChuc" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="DanhGiaDangVien">
+    <Key>
+      <PropertyRef Name="DGDVID" />
+    </Key>
+    <Property Name="DGDVID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DGDVChucVuDang" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGDVChucVuChinhQuyen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGDVDonVi" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGDVChiBo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGDVHangChucDanh" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGDVBac" Type="Int32" Nullable="false" />
+    <Property Name="DGDVHeSoLuong" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="DGDVUuDiem" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGDVKetQuaKhacPhuc" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGDVKhuyetDiem" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGDVPhuongHuong" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGDVDanhGia" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DGDVNam" Type="Int32" Nullable="false" />
+    <Property Name="DGDVNgayThang" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_DanhGiaDangVien_NhanVien" FromRole="DanhGiaDangVien" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="ACCID" />
+    </Key>
+    <Property Name="ACCID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ACCEmail" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ACCPassword" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACCChucNang" Type="Int32" Nullable="false" />
+    <Property Name="ACCStatus" Type="Boolean" Nullable="false" />
+    <Property Name="ACCUpThongTinCaNhan" Type="Boolean" Nullable="false" />
+    <Property Name="ACCUpLyLich" Type="Boolean" Nullable="false" />
+    <Property Name="ACCInLyLich" Type="Boolean" Nullable="false" />
+    <Property Name="ACCInKeKhai" Type="Boolean" Nullable="false" />
+    <Property Name="ACCUpKeKhai" Type="Boolean" Nullable="false" />
+    <Property Name="ACCInDanhGia" Type="Boolean" Nullable="false" />
+    <Property Name="ACCUpDanhGia" Type="Boolean" Nullable="false" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PhuTrachChamCongs" Relationship="EmployeeManagementModel.FK_PhuTrachChamCong_Account" FromRole="Account" ToRole="PhuTrachChamCong" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_Account_NhanVien" FromRole="Account" ToRole="NhanVien" />
+  </EntityType>
+  <EntityType Name="LoaiChamCong">
+    <Key>
+      <PropertyRef Name="LCCID" />
+    </Key>
+    <Property Name="LCCID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LCCTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LCCKyHieu" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LCCGhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ChamCongs" Relationship="EmployeeManagementModel.FK_ChamCong_LoaiChamCong" FromRole="LoaiChamCong" ToRole="ChamCong" />
+  </EntityType>
+  <EntityType Name="PhuTrachChamCong">
+    <Key>
+      <PropertyRef Name="PTCCID" />
+    </Key>
+    <Property Name="PTCCID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ACCID" Type="Int32" Nullable="false" />
+    <Property Name="DVID" Type="Int32" Nullable="false" />
+    <Property Name="PCCCStatus" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Account" Relationship="EmployeeManagementModel.FK_PhuTrachChamCong_Account" FromRole="PhuTrachChamCong" ToRole="Account" />
+    <NavigationProperty Name="DonVi" Relationship="EmployeeManagementModel.FK_PhuTrachChamCong_DonVi" FromRole="PhuTrachChamCong" ToRole="DonVi" />
+  </EntityType>
+  <Association Name="FK_PhuTrachChamCong_Account">
+    <End Type="EmployeeManagementModel.Account" Role="Account" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.PhuTrachChamCong" Role="PhuTrachChamCong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="ACCID" />
+      </Principal>
+      <Dependent Role="PhuTrachChamCong">
+        <PropertyRef Name="ACCID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhuTrachChamCong_DonVi">
+    <End Type="EmployeeManagementModel.DonVi" Role="DonVi" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.PhuTrachChamCong" Role="PhuTrachChamCong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonVi">
+        <PropertyRef Name="DVID" />
+      </Principal>
+      <Dependent Role="PhuTrachChamCong">
+        <PropertyRef Name="DVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ChamCong">
+    <Key>
+      <PropertyRef Name="CCID" />
+    </Key>
+    <Property Name="CCID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LVID" Type="Int32" Nullable="false" />
+    <Property Name="CCDATE" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="LCCID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="LoaiChamCong" Relationship="EmployeeManagementModel.FK_ChamCong_LoaiChamCong" FromRole="ChamCong" ToRole="LoaiChamCong" />
+    <NavigationProperty Name="LamViec" Relationship="EmployeeManagementModel.FK_ChamCong_LamViec" FromRole="ChamCong" ToRole="LamViec" />
+  </EntityType>
+  <Association Name="FK_ChamCong_LoaiChamCong">
+    <End Type="EmployeeManagementModel.LoaiChamCong" Role="LoaiChamCong" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.ChamCong" Role="ChamCong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiChamCong">
+        <PropertyRef Name="LCCID" />
+      </Principal>
+      <Dependent Role="ChamCong">
+        <PropertyRef Name="LCCID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="NVID" />
+    </Key>
+    <Property Name="NVID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NVTen" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NVTenKhac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NVNgaySinh" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DTID" Type="Int32" Nullable="false" />
+    <Property Name="TGID" Type="Int32" Nullable="false" />
+    <Property Name="NVHoKhau" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NVNoiO" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GDPTID" Type="Int32" Nullable="false" />
+    <Property Name="CMID" Type="Int32" Nullable="false" />
+    <Property Name="LLCTID" Type="Int32" Nullable="false" />
+    <Property Name="QLNNID" Type="Int32" Nullable="false" />
+    <Property Name="NVSoTruong" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NVTinhTrangSucKhoe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NVChieuCao" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="NVCanNang" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="NMID" Type="Int32" Nullable="false" />
+    <Property Name="NVCMND" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NVNgayCapCMND" Type="DateTime" Precision="3" />
+    <Property Name="NVHinh" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="NVGioiTinh" Type="Boolean" Nullable="false" />
+    <Property Name="NVQueQuan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NVNoiSinh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NVNganh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NVBHXH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Accounts" Relationship="EmployeeManagementModel.FK_Account_NhanVien" FromRole="NhanVien" ToRole="Account" />
+    <NavigationProperty Name="ChinhSaches" Relationship="EmployeeManagementModel.FK_ChinhSach_NhanVien" FromRole="NhanVien" ToRole="ChinhSach" />
+    <NavigationProperty Name="ChuyenMon" Relationship="EmployeeManagementModel.FK_NhanVien_ChuyenMon" FromRole="NhanVien" ToRole="ChuyenMon" />
+    <NavigationProperty Name="DanhGiaDangViens" Relationship="EmployeeManagementModel.FK_DanhGiaDangVien_NhanVien" FromRole="NhanVien" ToRole="DanhGiaDangVien" />
+    <NavigationProperty Name="DanhGiaLaoDongs" Relationship="EmployeeManagementModel.FK_DanhGiaLaoDong_NhanVien" FromRole="NhanVien" ToRole="DanhGiaLaoDong" />
+    <NavigationProperty Name="DanhGias" Relationship="EmployeeManagementModel.FK_DanhGia_NhanVien" FromRole="NhanVien" ToRole="DanhGia" />
+    <NavigationProperty Name="DanhGiaVienChucs" Relationship="EmployeeManagementModel.FK_DanhGiaVienChuc_NhanVien" FromRole="NhanVien" ToRole="DanhGiaVienChuc" />
+    <NavigationProperty Name="DanToc" Relationship="EmployeeManagementModel.FK_NhanVien_DanToc" FromRole="NhanVien" ToRole="DanToc" />
+    <NavigationProperty Name="GiaoDucPhoThong" Relationship="EmployeeManagementModel.FK_NhanVien_GiaoDucPhoThong" FromRole="NhanVien" ToRole="GiaoDucPhoThong" />
+    <NavigationProperty Name="KeKhais" Relationship="EmployeeManagementModel.FK_KeKhai_NhanVien" FromRole="NhanVien" ToRole="KeKhai" />
+    <NavigationProperty Name="KhenThuongs" Relationship="EmployeeManagementModel.FK_KhenThuong_NhanVien" FromRole="NhanVien" ToRole="KhenThuong" />
+    <NavigationProperty Name="KyLuats" Relationship="EmployeeManagementModel.FK_KyLuat_NhanVien" FromRole="NhanVien" ToRole="KyLuat" />
+    <NavigationProperty Name="LyLuanChinhTri" Relationship="EmployeeManagementModel.FK_NhanVien_LyLuanChinhTri" FromRole="NhanVien" ToRole="LyLuanChinhTri" />
+    <NavigationProperty Name="NhomMau" Relationship="EmployeeManagementModel.FK_NhanVien_NhomMau" FromRole="NhanVien" ToRole="NhomMau" />
+    <NavigationProperty Name="QuanLyNhaNuoc" Relationship="EmployeeManagementModel.FK_NhanVien_QuanLyNhaNuoc" FromRole="NhanVien" ToRole="QuanLyNhaNuoc" />
+    <NavigationProperty Name="TonGiao" Relationship="EmployeeManagementModel.FK_NhanVien_TonGiao" FromRole="NhanVien" ToRole="TonGiao" />
+    <NavigationProperty Name="PhongTangDanhHieux" Relationship="EmployeeManagementModel.FK_PhongTangDanhHieu_NhanVien" FromRole="NhanVien" ToRole="PhongTangDanhHieu" />
+    <NavigationProperty Name="QuanHes" Relationship="EmployeeManagementModel.FK_QuanHe_NhanVien" FromRole="NhanVien" ToRole="QuanHe" />
+    <NavigationProperty Name="QuaTrinhDaoTaos" Relationship="EmployeeManagementModel.FK_QuaTrinhDaoTao_NhanVien" FromRole="NhanVien" ToRole="QuaTrinhDaoTao" />
+    <NavigationProperty Name="ThamGiaChinhTriXaHois" Relationship="EmployeeManagementModel.FK_ThamGiaChinhTriXaHoi_NhanVien" FromRole="NhanVien" ToRole="ThamGiaChinhTriXaHois" />
+    <NavigationProperty Name="TrinhDoNgoaiNgus" Relationship="EmployeeManagementModel.FK_TrinhDoNgoaiNgu_NhanVien" FromRole="NhanVien" ToRole="TrinhDoNgoaiNgu" />
+    <NavigationProperty Name="TrinhDoTinHocs" Relationship="EmployeeManagementModel.FK_TrinhDoTinHoc_NhanVien" FromRole="NhanVien" ToRole="TrinhDoTinHoc" />
+    <NavigationProperty Name="LamViecs" Relationship="EmployeeManagementModel.FK_LamViec_NhanVien" FromRole="NhanVien" ToRole="LamViec" />
+  </EntityType>
+  <Association Name="FK_Account_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.Account" Role="Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChinhSach_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.ChinhSach" Role="ChinhSach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="ChinhSach">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NhanVien_ChuyenMon">
+    <End Type="EmployeeManagementModel.ChuyenMon" Role="ChuyenMon" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChuyenMon">
+        <PropertyRef Name="CMID" />
+      </Principal>
+      <Dependent Role="NhanVien">
+        <PropertyRef Name="CMID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DanhGiaDangVien_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.DanhGiaDangVien" Role="DanhGiaDangVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="DanhGiaDangVien">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DanhGiaLaoDong_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.DanhGiaLaoDong" Role="DanhGiaLaoDong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="DanhGiaLaoDong">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DanhGia_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.DanhGia" Role="DanhGia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="DanhGia">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DanhGiaVienChuc_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.DanhGiaVienChuc" Role="DanhGiaVienChuc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="DanhGiaVienChuc">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NhanVien_DanToc">
+    <End Type="EmployeeManagementModel.DanToc" Role="DanToc" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DanToc">
+        <PropertyRef Name="DTID" />
+      </Principal>
+      <Dependent Role="NhanVien">
+        <PropertyRef Name="DTID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NhanVien_GiaoDucPhoThong">
+    <End Type="EmployeeManagementModel.GiaoDucPhoThong" Role="GiaoDucPhoThong" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GiaoDucPhoThong">
+        <PropertyRef Name="GDPTID" />
+      </Principal>
+      <Dependent Role="NhanVien">
+        <PropertyRef Name="GDPTID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KeKhai_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.KeKhai" Role="KeKhai" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="KeKhai">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KhenThuong_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.KhenThuong" Role="KhenThuong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="KhenThuong">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KyLuat_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.KyLuat" Role="KyLuat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="KyLuat">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NhanVien_LyLuanChinhTri">
+    <End Type="EmployeeManagementModel.LyLuanChinhTri" Role="LyLuanChinhTri" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LyLuanChinhTri">
+        <PropertyRef Name="LLCTID" />
+      </Principal>
+      <Dependent Role="NhanVien">
+        <PropertyRef Name="LLCTID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NhanVien_NhomMau">
+    <End Type="EmployeeManagementModel.NhomMau" Role="NhomMau" Multiplicity="1" />
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhomMau">
+        <PropertyRef Name="NMID" />
+      </Principal>
+      <Dependent Role="NhanVien">
+        <PropertyRef Name="NMID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NhanVien_QuanLyNhaNuoc">
+    <End Type="EmployeeManagementModel.QuanLyNhaNuoc" Role="QuanLyNhaNuoc" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QuanLyNhaNuoc">
+        <PropertyRef Name="QLNNID" />
+      </Principal>
+      <Dependent Role="NhanVien">
+        <PropertyRef Name="QLNNID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NhanVien_TonGiao">
+    <End Type="EmployeeManagementModel.TonGiao" Role="TonGiao" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TonGiao">
+        <PropertyRef Name="TGID" />
+      </Principal>
+      <Dependent Role="NhanVien">
+        <PropertyRef Name="TGID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhongTangDanhHieu_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.PhongTangDanhHieu" Role="PhongTangDanhHieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="PhongTangDanhHieu">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuanHe_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.QuanHe" Role="QuanHe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="QuanHe">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuaTrinhDaoTao_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.QuaTrinhDaoTao" Role="QuaTrinhDaoTao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="QuaTrinhDaoTao">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ThamGiaChinhTriXaHoi_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.ThamGiaChinhTriXaHois" Role="ThamGiaChinhTriXaHois" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="ThamGiaChinhTriXaHois">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrinhDoNgoaiNgu_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.TrinhDoNgoaiNgu" Role="TrinhDoNgoaiNgu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="TrinhDoNgoaiNgu">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrinhDoTinHoc_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.TrinhDoTinHoc" Role="TrinhDoTinHoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="TrinhDoTinHoc">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Ngach">
+    <Key>
+      <PropertyRef Name="NGID" />
+    </Key>
+    <Property Name="NGID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NGTen" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NGNoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NGNamTangLuong" Type="Int32" Nullable="false" />
+    <Property Name="NGMa" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="HeSoLuongs" Relationship="EmployeeManagementModel.FK_HeSoLuong_Ngach" FromRole="Ngach" ToRole="HeSoLuong" />
+  </EntityType>
+  <Association Name="FK_HeSoLuong_Ngach">
+    <End Type="EmployeeManagementModel.Ngach" Role="Ngach" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.HeSoLuong" Role="HeSoLuong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ngach">
+        <PropertyRef Name="NGID" />
+      </Principal>
+      <Dependent Role="HeSoLuong">
+        <PropertyRef Name="NGID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="LamViec">
+    <Key>
+      <PropertyRef Name="LVID" />
+    </Key>
+    <Property Name="LVID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DVID" Type="Int32" Nullable="false" />
+    <Property Name="NVID" Type="Int32" Nullable="false" />
+    <Property Name="LVTuNgay" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="LVDenNgay" Type="DateTime" Precision="0" />
+    <Property Name="CVID" Type="Int32" Nullable="false" />
+    <Property Name="LVNhiemVu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LVPhuCapChucVu" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="LVPhuCapCongVu" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="LVPhuCapKiemNhiem" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="LVPhuCapNghe" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="LVPhuCapThamNienNghe" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="LVPhuCapVuotKhung" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="LVPhuCapDocHai" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="LVLuongCoBan" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LVTyLe" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="LVThuoc" Type="Int32" />
+    <Property Name="LVSoNgayPhep" Type="Int32" Nullable="false" />
+    <Property Name="LVSoHopDong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LVNgayHopDong" Type="DateTime" Precision="0" />
+    <Property Name="HSLID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ChamCongs" Relationship="EmployeeManagementModel.FK_ChamCong_LamViec" FromRole="LamViec" ToRole="ChamCong" />
+    <NavigationProperty Name="ChucVu" Relationship="EmployeeManagementModel.FK_LamViec_ChucVu" FromRole="LamViec" ToRole="ChucVu" />
+    <NavigationProperty Name="DonVi" Relationship="EmployeeManagementModel.FK_LamViec_DonVi" FromRole="LamViec" ToRole="DonVi" />
+    <NavigationProperty Name="HeSoLuong" Relationship="EmployeeManagementModel.FK_LamViec_HeSoLuong" FromRole="LamViec" ToRole="HeSoLuong" />
+    <NavigationProperty Name="LamViecs1" Relationship="EmployeeManagementModel.FK_LamViec_LamViec" FromRole="LamViec" ToRole="LamViec1" />
+    <NavigationProperty Name="LamViec1" Relationship="EmployeeManagementModel.FK_LamViec_LamViec" FromRole="LamViec1" ToRole="LamViec" />
+    <NavigationProperty Name="NhanVien" Relationship="EmployeeManagementModel.FK_LamViec_NhanVien" FromRole="LamViec" ToRole="NhanVien" />
+  </EntityType>
+  <Association Name="FK_ChamCong_LamViec">
+    <End Type="EmployeeManagementModel.LamViec" Role="LamViec" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.ChamCong" Role="ChamCong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LamViec">
+        <PropertyRef Name="LVID" />
+      </Principal>
+      <Dependent Role="ChamCong">
+        <PropertyRef Name="LVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LamViec_ChucVu">
+    <End Type="EmployeeManagementModel.ChucVu" Role="ChucVu" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.LamViec" Role="LamViec" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChucVu">
+        <PropertyRef Name="CVID" />
+      </Principal>
+      <Dependent Role="LamViec">
+        <PropertyRef Name="CVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LamViec_DonVi">
+    <End Type="EmployeeManagementModel.DonVi" Role="DonVi" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.LamViec" Role="LamViec" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonVi">
+        <PropertyRef Name="DVID" />
+      </Principal>
+      <Dependent Role="LamViec">
+        <PropertyRef Name="DVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LamViec_HeSoLuong">
+    <End Type="EmployeeManagementModel.HeSoLuong" Role="HeSoLuong" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.LamViec" Role="LamViec" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HeSoLuong">
+        <PropertyRef Name="HSLID" />
+      </Principal>
+      <Dependent Role="LamViec">
+        <PropertyRef Name="HSLID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LamViec_LamViec">
+    <End Type="EmployeeManagementModel.LamViec" Role="LamViec" Multiplicity="0..1" />
+    <End Type="EmployeeManagementModel.LamViec" Role="LamViec1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LamViec">
+        <PropertyRef Name="LVID" />
+      </Principal>
+      <Dependent Role="LamViec1">
+        <PropertyRef Name="LVThuoc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LamViec_NhanVien">
+    <End Type="EmployeeManagementModel.NhanVien" Role="NhanVien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="EmployeeManagementModel.LamViec" Role="LamViec" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhanVien">
+        <PropertyRef Name="NVID" />
+      </Principal>
+      <Dependent Role="LamViec">
+        <PropertyRef Name="NVID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

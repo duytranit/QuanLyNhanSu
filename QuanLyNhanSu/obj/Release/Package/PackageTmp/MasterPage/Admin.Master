@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="QuanLyNhanSu.MasterPage.Admin" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - QLNS</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/jquery-1.10.2.js") %>"></script>
+        <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/bootstrap.js") %>"></script>
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/DanhSachTangLuong" >
+                        <strong>QUẢN LÝ NHÂN SỰ</strong>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <asp:LinkButton ID="btNhanSu" runat="server" Text="Nhân sự" PostBackUrl="~/NhanSu" Visible="false"></asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="btLuong" runat="server" Text="Lương" PostBackUrl="~/DanhSachTangLuong" Visible="false"></asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="btTaiKhoan" runat="server" Text="Tài khoản" PostBackUrl="~/TaiKhoan" Visible="false"></asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton runat="server" Text="TT cá nhân" PostBackUrl="~/ThongTinCaNhan"></asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="btChamCong" runat="server" Text="Chấm công" PostBackUrl="~/ChamCong"></asp:LinkButton>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>       
+                            <asp:LinkButton ID="btLoginAccount" runat="server" PostBackUrl="~/CapNhatTaiKhoan"></asp:LinkButton>
+                        </li>
+                    </ul>                   
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <div style="text-align: center;">
+                    <asp:Image runat="server" ImageUrl="~/Images/QD05.png" Height="80" /><br />
+                    - &copy; <%: DateTime.Now.Year %> -
+                    <br />
+                    Số 82, đường Hùng Vương, phường 2, thành phố Bến Tre, tỉnh Bến Tre
+                    <br />
+                    ĐT: 0753545392 | Email: duytran.it@gmail.com
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

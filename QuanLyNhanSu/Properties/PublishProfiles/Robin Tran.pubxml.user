@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Data\Public\QuanLyNhanSu</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/12/2017 07:19:28</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>06/12/2017 07:19:26</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>06/12/2017 07:19:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/12/2017 07:19:34</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/12/2017 07:19:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>06/12/2017 07:19:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>06/12/2017 07:19:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>06/12/2017 07:19:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>06/12/2017 07:19:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>06/12/2017 07:19:25</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/12/2017 07:19:25</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>03/28/2017 07:29:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>03/28/2017 07:29:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>03/28/2017 07:29:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>03/28/2017 07:29:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>03/28/2017 07:29:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>03/28/2017 07:29:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>03/28/2017 07:29:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>03/28/2017 07:29:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>03/28/2017 07:29:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>06/12/2017 07:19:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>06/12/2017 07:19:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/12/2017 07:19:19</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/12/2017 07:19:18</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>03/28/2017 07:29:39</publishTime>
+    </File>
+    <File Include="bin/QuanLyNhanSu.dll">
+      <publishTime>08/24/2017 09:58:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/12/2017 07:19:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/12/2017 07:19:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/12/2017 07:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/12/2017 07:19:39</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/12/2017 07:19:39</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/12/2017 07:19:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/12/2017 07:19:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/12/2017 07:19:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/12/2017 07:19:29</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/12/2017 07:19:29</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/12/2017 07:19:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/12/2017 07:19:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/12/2017 07:19:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>06/12/2017 07:19:12</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>06/12/2017 07:19:25</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>06/12/2017 07:19:11</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/12/2017 07:18:39</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>06/12/2017 07:18:36</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>08/09/2017 16:12:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/12/2017 07:19:42</publishTime>
+    </File>
+    <File Include="Content/own.css">
+      <publishTime>08/23/2017 09:24:29</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/12/2017 07:19:41</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>08/09/2017 15:13:58</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/12/2017 07:18:36</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/12/2017 07:19:43</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/12/2017 07:19:43</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/12/2017 07:19:43</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/12/2017 07:19:42</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/12/2017 07:18:36</publishTime>
+    </File>
+    <File Include="Images/Attendance.png">
+      <publishTime>08/09/2017 15:28:50</publishTime>
+    </File>
+    <File Include="Images/DefaultUser.png">
+      <publishTime>06/12/2017 07:19:43</publishTime>
+    </File>
+    <File Include="Images/EmployeeManagement.png">
+      <publishTime>08/09/2017 14:58:50</publishTime>
+    </File>
+    <File Include="Images/QD05.png">
+      <publishTime>08/09/2017 14:13:06</publishTime>
+    </File>
+    <File Include="MasterPage/Admin.Master">
+      <publishTime>08/21/2017 07:44:14</publishTime>
+    </File>
+    <File Include="Models/QLNSEntityDataModel.edmx.diagram">
+      <publishTime>08/21/2017 15:04:35</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/24/2017 08:13:29</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/12/2017 07:19:55</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>03/28/2017 07:30:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/12/2017 07:19:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>03/28/2017 07:30:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>03/28/2017 07:30:45</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>03/28/2017 07:30:45</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>03/28/2017 07:30:45</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>03/28/2017 07:30:45</publishTime>
+    </File>
+    <File Include="Scripts/Uploads/Images/NhanVien/DefaultUser.png">
+      <publishTime>06/12/2017 07:19:55</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>03/28/2017 07:30:45</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>03/28/2017 07:30:45</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>03/28/2017 07:30:45</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>03/28/2017 07:30:45</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>03/28/2017 07:30:47</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>03/28/2017 07:30:47</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>03/28/2017 07:30:47</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>03/28/2017 07:30:47</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>03/28/2017 07:30:47</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>03/28/2017 07:30:47</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>03/28/2017 07:30:46</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>03/28/2017 07:30:45</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>08/09/2017 14:53:14</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>06/12/2017 07:18:36</publishTime>
+    </File>
+    <File Include="Uploads/Images/NhanVien/DefaultUser.png">
+      <publishTime>03/28/2017 07:30:47</publishTime>
+    </File>
+    <File Include="View/Account/Admin/CUD.aspx">
+      <publishTime>07/03/2017 14:58:44</publishTime>
+    </File>
+    <File Include="View/Account/Admin/Index.aspx">
+      <publishTime>07/03/2017 14:43:57</publishTime>
+    </File>
+    <File Include="View/Account/Admin/LoginAccount.aspx">
+      <publishTime>07/03/2017 14:44:13</publishTime>
+    </File>
+    <File Include="View/Account/Form/_ACCForm.ascx">
+      <publishTime>06/29/2017 13:51:51</publishTime>
+    </File>
+    <File Include="View/Account/Form/_ACCRadGrid.ascx">
+      <publishTime>07/03/2017 14:36:23</publishTime>
+    </File>
+    <File Include="View/Account/Form/_Form.ascx">
+      <publishTime>07/12/2017 13:32:02</publishTime>
+    </File>
+    <File Include="View/BangCap/Index.aspx">
+      <publishTime>06/12/2017 07:19:56</publishTime>
+    </File>
+    <File Include="View/ChamCong/Admin/CUD.aspx">
+      <publishTime>08/09/2017 13:20:47</publishTime>
+    </File>
+    <File Include="View/ChamCong/Admin/Index.aspx">
+      <publishTime>08/23/2017 16:06:52</publishTime>
+    </File>
+    <File Include="View/ChamCong/Admin/ThongKe.aspx">
+      <publishTime>08/17/2017 08:45:50</publishTime>
+    </File>
+    <File Include="View/ChamCong/Form/_CCForm.ascx">
+      <publishTime>08/11/2017 16:22:59</publishTime>
+    </File>
+    <File Include="View/ChamCong/Form/_CCTable.ascx">
+      <publishTime>08/24/2017 09:48:16</publishTime>
+    </File>
+    <File Include="View/ChamCong/Form/_TKCCTable.ascx">
+      <publishTime>08/15/2017 14:07:10</publishTime>
+    </File>
+    <File Include="View/ChinhSach/Admin/CUD.aspx">
+      <publishTime>06/20/2017 09:20:25</publishTime>
+    </File>
+    <File Include="View/ChinhSach/Form/_CSRadGrid.ascx">
+      <publishTime>06/12/2017 07:19:57</publishTime>
+    </File>
+    <File Include="View/ChinhSach/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:19:56</publishTime>
+    </File>
+    <File Include="View/ChinhTriXaHoi/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:19:58</publishTime>
+    </File>
+    <File Include="View/ChinhTriXaHoi/Admin/Index.aspx">
+      <publishTime>06/12/2017 07:19:57</publishTime>
+    </File>
+    <File Include="View/ChinhTriXaHoi/Form/_CTXHRadGrid.ascx">
+      <publishTime>06/12/2017 07:19:58</publishTime>
+    </File>
+    <File Include="View/ChinhTriXaHoi/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:19:58</publishTime>
+    </File>
+    <File Include="View/ChucVu/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:19:59</publishTime>
+    </File>
+    <File Include="View/ChucVu/Admin/Index.aspx">
+      <publishTime>06/12/2017 07:19:59</publishTime>
+    </File>
+    <File Include="View/ChucVu/Form/_ChucVuRadGrid.ascx">
+      <publishTime>06/12/2017 07:19:59</publishTime>
+    </File>
+    <File Include="View/ChucVu/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:19:59</publishTime>
+    </File>
+    <File Include="View/DanhGia/Admin/CUD.aspx">
+      <publishTime>06/20/2017 09:20:58</publishTime>
+    </File>
+    <File Include="View/DanhGia/Form/_DGRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:00</publishTime>
+    </File>
+    <File Include="View/DanhGia/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:00</publishTime>
+    </File>
+    <File Include="View/DanhGiaDangVien/Admin/CUD.aspx">
+      <publishTime>06/27/2017 09:59:16</publishTime>
+    </File>
+    <File Include="View/DanhGiaDangVien/Form/_DGDVRadGrid.ascx">
+      <publishTime>06/27/2017 10:12:57</publishTime>
+    </File>
+    <File Include="View/DanhGiaDangVien/Form/_Form.ascx">
+      <publishTime>06/27/2017 08:06:54</publishTime>
+    </File>
+    <File Include="View/DanhGiaLaoDong/Admin/CUD.aspx">
+      <publishTime>06/26/2017 09:04:23</publishTime>
+    </File>
+    <File Include="View/DanhGiaLaoDong/Form/_DGLDRadGrid.ascx">
+      <publishTime>07/17/2017 07:56:10</publishTime>
+    </File>
+    <File Include="View/DanhGiaLaoDong/Form/_Form.ascx">
+      <publishTime>06/23/2017 09:46:14</publishTime>
+    </File>
+    <File Include="View/DanhGiaVienChuc/Admin/CUD.aspx">
+      <publishTime>06/26/2017 09:05:11</publishTime>
+    </File>
+    <File Include="View/DanhGiaVienChuc/Form/_DGVCRadGrid.ascx">
+      <publishTime>07/17/2017 07:55:31</publishTime>
+    </File>
+    <File Include="View/DanhGiaVienChuc/Form/_Form.ascx">
+      <publishTime>06/26/2017 08:23:57</publishTime>
+    </File>
+    <File Include="View/DaQui/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:00</publishTime>
+    </File>
+    <File Include="View/DaQui/Form/_DQRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:01</publishTime>
+    </File>
+    <File Include="View/DaQui/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:01</publishTime>
+    </File>
+    <File Include="View/Dat/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:01</publishTime>
+    </File>
+    <File Include="View/Dat/Admin/Index.aspx">
+      <publishTime>03/28/2017 09:26:59</publishTime>
+    </File>
+    <File Include="View/Dat/Form/_DatRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:02</publishTime>
+    </File>
+    <File Include="View/Dat/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:01</publishTime>
+    </File>
+    <File Include="View/DongSan/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:02</publishTime>
+    </File>
+    <File Include="View/DongSan/Form/_DSRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:02</publishTime>
+    </File>
+    <File Include="View/DongSan/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:02</publishTime>
+    </File>
+    <File Include="View/DonVi/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:03</publishTime>
+    </File>
+    <File Include="View/DonVi/Admin/Index.aspx">
+      <publishTime>06/12/2017 07:20:02</publishTime>
+    </File>
+    <File Include="View/DonVi/Form/_DonViRadGrid.ascx">
+      <publishTime>08/21/2017 07:38:10</publishTime>
+    </File>
+    <File Include="View/DonVi/Form/_Form.ascx">
+      <publishTime>08/18/2017 16:06:22</publishTime>
+    </File>
+    <File Include="View/GiaiTrinh/Admin/CUD.aspx">
+      <publishTime>06/13/2017 08:52:43</publishTime>
+    </File>
+    <File Include="View/GiaiTrinh/Form/_Form.ascx">
+      <publishTime>06/13/2017 09:39:49</publishTime>
+    </File>
+    <File Include="View/GiaiTrinh/Form/_GTRadGrid.ascx">
+      <publishTime>06/13/2017 09:37:02</publishTime>
+    </File>
+    <File Include="View/HeSoLuong/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:04</publishTime>
+    </File>
+    <File Include="View/HeSoLuong/Admin/Index.aspx">
+      <publishTime>06/12/2017 07:20:04</publishTime>
+    </File>
+    <File Include="View/HeSoLuong/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:04</publishTime>
+    </File>
+    <File Include="View/HeSoLuong/Form/_HeSoLuongRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:04</publishTime>
+    </File>
+    <File Include="View/KeKhai/Admin/CUD.aspx">
+      <publishTime>06/20/2017 09:27:19</publishTime>
+    </File>
+    <File Include="View/KeKhai/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:05</publishTime>
+    </File>
+    <File Include="View/KeKhai/Form/_KKRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:05</publishTime>
+    </File>
+    <File Include="View/KeKhaiCon/Admin/CUD.aspx">
+      <publishTime>06/12/2017 16:05:36</publishTime>
+    </File>
+    <File Include="View/KeKhaiCon/Form/_Form.ascx">
+      <publishTime>06/12/2017 16:31:21</publishTime>
+    </File>
+    <File Include="View/KeKhaiCon/Form/_KKCRadGrid.ascx">
+      <publishTime>06/12/2017 16:20:28</publishTime>
+    </File>
+    <File Include="View/KhenThuong/Admin/CUD.aspx">
+      <publishTime>06/20/2017 09:22:20</publishTime>
+    </File>
+    <File Include="View/KhenThuong/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:06</publishTime>
+    </File>
+    <File Include="View/KhenThuong/Form/_KTRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:06</publishTime>
+    </File>
+    <File Include="View/KhoanNo/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:06</publishTime>
+    </File>
+    <File Include="View/KhoanNo/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:07</publishTime>
+    </File>
+    <File Include="View/KhoanNo/Form/_KNRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:06</publishTime>
+    </File>
+    <File Include="View/KyLuat/Admin/CUD.aspx">
+      <publishTime>06/20/2017 09:21:26</publishTime>
+    </File>
+    <File Include="View/KyLuat/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:08</publishTime>
+    </File>
+    <File Include="View/KyLuat/Form/_KLRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:07</publishTime>
+    </File>
+    <File Include="View/LamViec/Admin/CUD.aspx">
+      <publishTime>06/15/2017 14:15:59</publishTime>
+    </File>
+    <File Include="View/LamViec/Admin/TangLuong.aspx">
+      <publishTime>06/15/2017 14:16:05</publishTime>
+    </File>
+    <File Include="View/LamViec/Form/_Form.ascx">
+      <publishTime>08/22/2017 10:13:38</publishTime>
+    </File>
+    <File Include="View/LamViec/Form/_LVRadGrid.ascx">
+      <publishTime>08/21/2017 09:56:21</publishTime>
+    </File>
+    <File Include="View/LamViec/Form/_LVTLRadGrid.ascx">
+      <publishTime>06/29/2017 15:38:09</publishTime>
+    </File>
+    <File Include="View/NgoaiNgu/Admin/CUD.aspx">
+      <publishTime>03/28/2017 07:30:51</publishTime>
+    </File>
+    <File Include="View/NgoaiNgu/Admin/Index.aspx">
+      <publishTime>03/28/2017 07:30:52</publishTime>
+    </File>
+    <File Include="View/NgoaiNgu/Form/_Form.ascx">
+      <publishTime>03/28/2017 07:30:52</publishTime>
+    </File>
+    <File Include="View/NgoaiNgu/Form/_NNRadGrid.ascx">
+      <publishTime>03/28/2017 07:30:52</publishTime>
+    </File>
+    <File Include="View/Nha/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:09</publishTime>
+    </File>
+    <File Include="View/Nha/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:10</publishTime>
+    </File>
+    <File Include="View/Nha/Form/_NHARadGrid.ascx">
+      <publishTime>06/12/2017 07:20:09</publishTime>
+    </File>
+    <File Include="View/NhanVien/Admin/CaNhan.aspx">
+      <publishTime>07/12/2017 08:40:25</publishTime>
+    </File>
+    <File Include="View/NhanVien/Admin/CUD.aspx">
+      <publishTime>06/27/2017 07:40:12</publishTime>
+    </File>
+    <File Include="View/NhanVien/Admin/Index.aspx">
+      <publishTime>06/12/2017 07:20:10</publishTime>
+    </File>
+    <File Include="View/NhanVien/Form/_Form.ascx">
+      <publishTime>08/23/2017 09:39:49</publishTime>
+    </File>
+    <File Include="View/NhanVien/Form/_NVRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:11</publishTime>
+    </File>
+    <File Include="View/PhongTangDanhHieu/Admin/CUD.aspx">
+      <publishTime>06/20/2017 09:23:06</publishTime>
+    </File>
+    <File Include="View/PhongTangDanhHieu/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:12</publishTime>
+    </File>
+    <File Include="View/PhongTangDanhHieu/Form/_PTDHRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:11</publishTime>
+    </File>
+    <File Include="View/PhuTrachChamCong/Admin/CUD.aspx">
+      <publishTime>08/10/2017 09:04:25</publishTime>
+    </File>
+    <File Include="View/PhuTrachChamCong/Admin/Index.aspx">
+      <publishTime>08/15/2017 14:12:32</publishTime>
+    </File>
+    <File Include="View/PhuTrachChamCong/Form/_Form.ascx">
+      <publishTime>08/10/2017 09:06:10</publishTime>
+    </File>
+    <File Include="View/PhuTrachChamCong/Form/_PTCCRadGrid.ascx">
+      <publishTime>08/10/2017 09:05:27</publishTime>
+    </File>
+    <File Include="View/QuanHe/Admin/CUD.aspx">
+      <publishTime>06/15/2017 15:47:46</publishTime>
+    </File>
+    <File Include="View/QuanHe/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:12</publishTime>
+    </File>
+    <File Include="View/QuanHe/Form/_QuanHeRadGrid.ascx">
+      <publishTime>07/10/2017 13:28:15</publishTime>
+    </File>
+    <File Include="View/QuanHeCongTac/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:12</publishTime>
+    </File>
+    <File Include="View/QuanHeCongTac/Form/_CongTacRadGrid.ascx">
+      <publishTime>06/15/2017 15:49:32</publishTime>
+    </File>
+    <File Include="View/QuanHeCongTac/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:13</publishTime>
+    </File>
+    <File Include="View/QuaTrinhDaoTao/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:13</publishTime>
+    </File>
+    <File Include="View/QuaTrinhDaoTao/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:14</publishTime>
+    </File>
+    <File Include="View/QuaTrinhDaoTao/Form/_QTDTRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:14</publishTime>
+    </File>
+    <File Include="View/TaiSanKhac/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:15</publishTime>
+    </File>
+    <File Include="View/TaiSanKhac/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:15</publishTime>
+    </File>
+    <File Include="View/TaiSanKhac/Form/_TSRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:15</publishTime>
+    </File>
+    <File Include="View/TaiSanNuocNgoai/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:16</publishTime>
+    </File>
+    <File Include="View/TaiSanNuocNgoai/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:16</publishTime>
+    </File>
+    <File Include="View/TaiSanNuocNgoai/Form/_TSNNRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:16</publishTime>
+    </File>
+    <File Include="View/ThamGiaCTXH/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:17</publishTime>
+    </File>
+    <File Include="View/ThamGiaCTXH/Admin/Index.aspx">
+      <publishTime>03/28/2017 07:30:54</publishTime>
+    </File>
+    <File Include="View/ThamGiaCTXH/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:17</publishTime>
+    </File>
+    <File Include="View/ThamGiaCTXH/Form/_TGCTXHRadGrid.ascx">
+      <publishTime>07/07/2017 08:27:14</publishTime>
+    </File>
+    <File Include="View/ThuNhap/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:18</publishTime>
+    </File>
+    <File Include="View/ThuNhap/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:18</publishTime>
+    </File>
+    <File Include="View/ThuNhap/Form/_TNRadGrid.ascx">
+      <publishTime>06/12/2017 07:20:18</publishTime>
+    </File>
+    <File Include="View/Tien/Admin/CUD.aspx">
+      <publishTime>06/12/2017 07:20:19</publishTime>
+    </File>
+    <File Include="View/Tien/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:20</publishTime>
+    </File>
+    <File Include="View/Tien/Form/_TIERadGrid.ascx">
+      <publishTime>06/12/2017 07:20:19</publishTime>
+    </File>
+    <File Include="View/TinHoc/Admin/CUD.aspx">
+      <publishTime>03/28/2017 07:30:55</publishTime>
+    </File>
+    <File Include="View/TinHoc/Admin/Index.aspx">
+      <publishTime>03/28/2017 07:30:55</publishTime>
+    </File>
+    <File Include="View/TinHoc/Form/_Form.ascx">
+      <publishTime>03/28/2017 07:30:55</publishTime>
+    </File>
+    <File Include="View/TinHoc/Form/_THRadGrid.ascx">
+      <publishTime>03/28/2017 07:30:55</publishTime>
+    </File>
+    <File Include="View/TrinhDoNgoaiNgu/Admin/CUD.aspx">
+      <publishTime>06/20/2017 09:25:53</publishTime>
+    </File>
+    <File Include="View/TrinhDoNgoaiNgu/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:20</publishTime>
+    </File>
+    <File Include="View/TrinhDoNgoaiNgu/Form/_TDNNRadGrid.ascx">
+      <publishTime>07/10/2017 14:11:23</publishTime>
+    </File>
+    <File Include="View/TrinhDoTinHoc/Admin/CUD.aspx">
+      <publishTime>06/20/2017 09:25:10</publishTime>
+    </File>
+    <File Include="View/TrinhDoTinHoc/Form/_Form.ascx">
+      <publishTime>06/12/2017 07:20:21</publishTime>
+    </File>
+    <File Include="View/TrinhDoTinHoc/Form/_TDTHRadGrid.ascx">
+      <publishTime>06/20/2017 08:54:40</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>06/12/2017 07:18:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/24/2017 07:51:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

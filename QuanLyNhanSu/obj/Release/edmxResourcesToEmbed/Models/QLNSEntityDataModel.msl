@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmployeeManagementModelStoreContainer" CdmEntityContainer="EmployeeManagementEntities">
+    <EntitySetMapping Name="BacLuongs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.BacLuong">
+        <MappingFragment StoreEntitySet="BacLuongs">
+          <ScalarProperty Name="BLTen" ColumnName="BLTen" />
+          <ScalarProperty Name="BLID" ColumnName="BLID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChinhSaches">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.ChinhSach">
+        <MappingFragment StoreEntitySet="ChinhSaches">
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="CSNgay" ColumnName="CSNgay" />
+          <ScalarProperty Name="CSTen" ColumnName="CSTen" />
+          <ScalarProperty Name="CSID" ColumnName="CSID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChinhTriXaHois">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.ChinhTriXaHois">
+        <MappingFragment StoreEntitySet="ChinhTriXaHois">
+          <ScalarProperty Name="CTXHGioiThieu" ColumnName="CTXHGioiThieu" />
+          <ScalarProperty Name="CTXHWebsite" ColumnName="CTXHWebsite" />
+          <ScalarProperty Name="CTXHEmail" ColumnName="CTXHEmail" />
+          <ScalarProperty Name="CTXHFax" ColumnName="CTXHFax" />
+          <ScalarProperty Name="CTXHDienThoai" ColumnName="CTXHDienThoai" />
+          <ScalarProperty Name="CTXHDiaChi" ColumnName="CTXHDiaChi" />
+          <ScalarProperty Name="CTXHTen" ColumnName="CTXHTen" />
+          <ScalarProperty Name="CTXHID" ColumnName="CTXHID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChucVus">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.ChucVu">
+        <MappingFragment StoreEntitySet="ChucVus">
+          <ScalarProperty Name="CVTen" ColumnName="CVTen" />
+          <ScalarProperty Name="CVID" ColumnName="CVID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChuyenMons">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.ChuyenMon">
+        <MappingFragment StoreEntitySet="ChuyenMons">
+          <ScalarProperty Name="CMTen" ColumnName="CMTen" />
+          <ScalarProperty Name="CMID" ColumnName="CMID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanhGias">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.DanhGia">
+        <MappingFragment StoreEntitySet="DanhGias">
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="DGNgay" ColumnName="DGNgay" />
+          <ScalarProperty Name="DGNoiDung" ColumnName="DGNoiDung" />
+          <ScalarProperty Name="DGID" ColumnName="DGID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanTocs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.DanToc">
+        <MappingFragment StoreEntitySet="DanTocs">
+          <ScalarProperty Name="DTThieuSo" ColumnName="DTThieuSo" />
+          <ScalarProperty Name="DTTen" ColumnName="DTTen" />
+          <ScalarProperty Name="DTID" ColumnName="DTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonVis">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.DonVi">
+        <MappingFragment StoreEntitySet="DonVis">
+          <ScalarProperty Name="DVDiaChi" ColumnName="DVDiaChi" />
+          <ScalarProperty Name="DVSDT" ColumnName="DVSDT" />
+          <ScalarProperty Name="DVBienChe" ColumnName="DVBienChe" />
+          <ScalarProperty Name="DVNoiDung" ColumnName="DVNoiDung" />
+          <ScalarProperty Name="DVTrangThai" ColumnName="DVTrangThai" />
+          <ScalarProperty Name="DVTrucThuocID" ColumnName="DVTrucThuocID" />
+          <ScalarProperty Name="DVTen" ColumnName="DVTen" />
+          <ScalarProperty Name="DVID" ColumnName="DVID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GiaoDucPhoThongs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.GiaoDucPhoThong">
+        <MappingFragment StoreEntitySet="GiaoDucPhoThongs">
+          <ScalarProperty Name="GDPTTen" ColumnName="GDPTTen" />
+          <ScalarProperty Name="GDPTID" ColumnName="GDPTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KeKhais">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.KeKhai">
+        <MappingFragment StoreEntitySet="KeKhais">
+          <ScalarProperty Name="KKVCChoO" ColumnName="KKVCChoO" />
+          <ScalarProperty Name="KKVCHoKhau" ColumnName="KKVCHoKhau" />
+          <ScalarProperty Name="KKVCCoQuan" ColumnName="KKVCCoQuan" />
+          <ScalarProperty Name="KKVCChucVu" ColumnName="KKVCChucVu" />
+          <ScalarProperty Name="KKVCDOB" ColumnName="KKVCDOB" />
+          <ScalarProperty Name="KKVoChong" ColumnName="KKVoChong" />
+          <ScalarProperty Name="KKChoO" ColumnName="KKChoO" />
+          <ScalarProperty Name="KKHoKhau" ColumnName="KKHoKhau" />
+          <ScalarProperty Name="KKCoQuan" ColumnName="KKCoQuan" />
+          <ScalarProperty Name="KKChucVu" ColumnName="KKChucVu" />
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="KKNgayNhap" ColumnName="KKNgayNhap" />
+          <ScalarProperty Name="KKNgayKeKhai" ColumnName="KKNgayKeKhai" />
+          <ScalarProperty Name="KKNam" ColumnName="KKNam" />
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhenThuongs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.KhenThuong">
+        <MappingFragment StoreEntitySet="KhenThuongs">
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="KTCapQuyetDinh" ColumnName="KTCapQuyetDinh" />
+          <ScalarProperty Name="KTNoiDung" ColumnName="KTNoiDung" />
+          <ScalarProperty Name="KTNgay" ColumnName="KTNgay" />
+          <ScalarProperty Name="KTID" ColumnName="KTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KyLuats">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.KyLuat">
+        <MappingFragment StoreEntitySet="KyLuats">
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="KLCap" ColumnName="KLCap" />
+          <ScalarProperty Name="KLNoiDung" ColumnName="KLNoiDung" />
+          <ScalarProperty Name="KLNgay" ColumnName="KLNgay" />
+          <ScalarProperty Name="KLID" ColumnName="KLID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiGiaiTrinhs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.LoaiGiaiTrinh">
+        <MappingFragment StoreEntitySet="LoaiGiaiTrinhs">
+          <ScalarProperty Name="LGTTenChung" ColumnName="LGTTenChung" />
+          <ScalarProperty Name="LGTTen" ColumnName="LGTTen" />
+          <ScalarProperty Name="LGTID" ColumnName="LGTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiQuanHes">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.LoaiQuanHe">
+        <MappingFragment StoreEntitySet="LoaiQuanHes">
+          <ScalarProperty Name="LQHDuyNhat" ColumnName="LQHDuyNhat" />
+          <ScalarProperty Name="LQHTen" ColumnName="LQHTen" />
+          <ScalarProperty Name="LQHID" ColumnName="LQHID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LyLuanChinhTris">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.LyLuanChinhTri">
+        <MappingFragment StoreEntitySet="LyLuanChinhTris">
+          <ScalarProperty Name="LLCTTen" ColumnName="LLCTTen" />
+          <ScalarProperty Name="LLCTID" ColumnName="LLCTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nhas">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.Nha">
+        <MappingFragment StoreEntitySet="Nhas">
+          <ScalarProperty Name="NHAIsNha" ColumnName="NHAIsNha" />
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="NHAGhiChu" ColumnName="NHAGhiChu" />
+          <ScalarProperty Name="NHAQuyenSoHuu" ColumnName="NHAQuyenSoHuu" />
+          <ScalarProperty Name="NHAGiaTri" ColumnName="NHAGiaTri" />
+          <ScalarProperty Name="NHADienTich" ColumnName="NHADienTich" />
+          <ScalarProperty Name="NHACap" ColumnName="NHACap" />
+          <ScalarProperty Name="NHALoai" ColumnName="NHALoai" />
+          <ScalarProperty Name="NHADiaChi" ColumnName="NHADiaChi" />
+          <ScalarProperty Name="NHAID" ColumnName="NHAID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhomMaus">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.NhomMau">
+        <MappingFragment StoreEntitySet="NhomMaus">
+          <ScalarProperty Name="NMTen" ColumnName="NMTen" />
+          <ScalarProperty Name="NMID" ColumnName="NMID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhongTangDanhHieux">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.PhongTangDanhHieu">
+        <MappingFragment StoreEntitySet="PhongTangDanhHieux">
+          <ScalarProperty Name="PTDHHoiDong" ColumnName="PTDHHoiDong" />
+          <ScalarProperty Name="PTDHNgay" ColumnName="PTDHNgay" />
+          <ScalarProperty Name="PTDHTen" ColumnName="PTDHTen" />
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="PTDHID" ColumnName="PTDHID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuanHeCongTacs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.QuanHeCongTac">
+        <MappingFragment StoreEntitySet="QuanHeCongTacs">
+          <ScalarProperty Name="QHID" ColumnName="QHID" />
+          <ScalarProperty Name="QHCTNoiDung" ColumnName="QHCTNoiDung" />
+          <ScalarProperty Name="QHCTNgheNghiep" ColumnName="QHCTNgheNghiep" />
+          <ScalarProperty Name="QHCTChucVu" ColumnName="QHCTChucVu" />
+          <ScalarProperty Name="QHCTDonVi" ColumnName="QHCTDonVi" />
+          <ScalarProperty Name="QHCTDenNgay" ColumnName="QHCTDenNgay" />
+          <ScalarProperty Name="QHCTTuNgay" ColumnName="QHCTTuNgay" />
+          <ScalarProperty Name="QHCTID" ColumnName="QHCTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuanHes">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.QuanHe">
+        <MappingFragment StoreEntitySet="QuanHes">
+          <ScalarProperty Name="LQHID" ColumnName="LQHID" />
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="QHNoiO" ColumnName="QHNoiO" />
+          <ScalarProperty Name="QHHoKhau" ColumnName="QHHoKhau" />
+          <ScalarProperty Name="QHGioiTinh" ColumnName="QHGioiTinh" />
+          <ScalarProperty Name="QHNgaySinh" ColumnName="QHNgaySinh" />
+          <ScalarProperty Name="QHTen" ColumnName="QHTen" />
+          <ScalarProperty Name="QHBenVo" ColumnName="QHBenVo" />
+          <ScalarProperty Name="QHID" ColumnName="QHID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuanLyNhaNuocs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.QuanLyNhaNuoc">
+        <MappingFragment StoreEntitySet="QuanLyNhaNuocs">
+          <ScalarProperty Name="QLNNTen" ColumnName="QLNNTen" />
+          <ScalarProperty Name="QLNNID" ColumnName="QLNNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuaTrinhDaoTaos">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.QuaTrinhDaoTao">
+        <MappingFragment StoreEntitySet="QuaTrinhDaoTaos">
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="QTDTVanBang" ColumnName="QTDTVanBang" />
+          <ScalarProperty Name="QTDTHinhThuc" ColumnName="QTDTHinhThuc" />
+          <ScalarProperty Name="QTDTDenNgay" ColumnName="QTDTDenNgay" />
+          <ScalarProperty Name="QTDTTuNgay" ColumnName="QTDTTuNgay" />
+          <ScalarProperty Name="QTDTChuyenNganh" ColumnName="QTDTChuyenNganh" />
+          <ScalarProperty Name="QTDTTruong" ColumnName="QTDTTruong" />
+          <ScalarProperty Name="QTDTID" ColumnName="QTDTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThamGiaChinhTriXaHois">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.ThamGiaChinhTriXaHois">
+        <MappingFragment StoreEntitySet="ThamGiaChinhTriXaHois">
+          <ScalarProperty Name="TGCTXHNoiDung" ColumnName="TGCTXHNoiDung" />
+          <ScalarProperty Name="TGCTXHChucVu" ColumnName="TGCTXHChucVu" />
+          <ScalarProperty Name="TGCTXHDenNgay" ColumnName="TGCTXHDenNgay" />
+          <ScalarProperty Name="TGCTXHTuNgay" ColumnName="TGCTXHTuNgay" />
+          <ScalarProperty Name="CTXHID" ColumnName="CTXHID" />
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="TGCTXHID" ColumnName="TGCTXHID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TonGiaos">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.TonGiao">
+        <MappingFragment StoreEntitySet="TonGiaos">
+          <ScalarProperty Name="TGTen" ColumnName="TGTen" />
+          <ScalarProperty Name="TGID" ColumnName="TGID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrinhDoNgoaiNgus">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.TrinhDoNgoaiNgu">
+        <MappingFragment StoreEntitySet="TrinhDoNgoaiNgus">
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="TDNNTiengDanToc" ColumnName="TDNNTiengDanToc" />
+          <ScalarProperty Name="TDNNChungChi" ColumnName="TDNNChungChi" />
+          <ScalarProperty Name="TDNNTen" ColumnName="TDNNTen" />
+          <ScalarProperty Name="TDNNID" ColumnName="TDNNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrinhDoTinHocs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.TrinhDoTinHoc">
+        <MappingFragment StoreEntitySet="TrinhDoTinHocs">
+          <ScalarProperty Name="TDChungChi" ColumnName="TDChungChi" />
+          <ScalarProperty Name="TDTHTen" ColumnName="TDTHTen" />
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="TDTHID" ColumnName="TDTHID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KeKhaiCons">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.KeKhaiCon">
+        <MappingFragment StoreEntitySet="KeKhaiCons">
+          <ScalarProperty Name="KKCChoO" ColumnName="KKCChoO" />
+          <ScalarProperty Name="KKCHoKhau" ColumnName="KKCHoKhau" />
+          <ScalarProperty Name="KKCDOB" ColumnName="KKCDOB" />
+          <ScalarProperty Name="KKCTen" ColumnName="KKCTen" />
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="KKCID" ColumnName="KKCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dats">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.Dat">
+        <MappingFragment StoreEntitySet="Dats">
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="DATGhiChu" ColumnName="DATGhiChu" />
+          <ScalarProperty Name="DATQuyenSoHuu" ColumnName="DATQuyenSoHuu" />
+          <ScalarProperty Name="DATGiaTri" ColumnName="DATGiaTri" />
+          <ScalarProperty Name="DATDienTich" ColumnName="DATDienTich" />
+          <ScalarProperty Name="DATDiaChi" ColumnName="DATDiaChi" />
+          <ScalarProperty Name="DATID" ColumnName="DATID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tiens">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.Tien">
+        <MappingFragment StoreEntitySet="Tiens">
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="TIENoiDung" ColumnName="TIENoiDung" />
+          <ScalarProperty Name="TIETienTe" ColumnName="TIETienTe" />
+          <ScalarProperty Name="TIESoLuong" ColumnName="TIESoLuong" />
+          <ScalarProperty Name="TIEID" ColumnName="TIEID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DongSans">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.DongSan">
+        <MappingFragment StoreEntitySet="DongSans">
+          <ScalarProperty Name="DSGiaTri" ColumnName="DSGiaTri" />
+          <ScalarProperty Name="DSSoLuong" ColumnName="DSSoLuong" />
+          <ScalarProperty Name="DSTen" ColumnName="DSTen" />
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="DSID" ColumnName="DSID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DaQuis">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.DaQui">
+        <MappingFragment StoreEntitySet="DaQuis">
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="DQGiaTri" ColumnName="DQGiaTri" />
+          <ScalarProperty Name="DQSoLuong" ColumnName="DQSoLuong" />
+          <ScalarProperty Name="DQTen" ColumnName="DQTen" />
+          <ScalarProperty Name="DQID" ColumnName="DQID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaiSanKhacs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.TaiSanKhac">
+        <MappingFragment StoreEntitySet="TaiSanKhacs">
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="TSKGiaTri" ColumnName="TSKGiaTri" />
+          <ScalarProperty Name="TSKSoLuong" ColumnName="TSKSoLuong" />
+          <ScalarProperty Name="TSKTen" ColumnName="TSKTen" />
+          <ScalarProperty Name="TSKID" ColumnName="TSKID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhoanNos">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.KhoanNo">
+        <MappingFragment StoreEntitySet="KhoanNos">
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="KNGiaTri" ColumnName="KNGiaTri" />
+          <ScalarProperty Name="KNSoLuong" ColumnName="KNSoLuong" />
+          <ScalarProperty Name="KNTen" ColumnName="KNTen" />
+          <ScalarProperty Name="KNID" ColumnName="KNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaiSanNuocNgoais">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.TaiSanNuocNgoai">
+        <MappingFragment StoreEntitySet="TaiSanNuocNgoais">
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="TSNNGiaTri" ColumnName="TSNNGiaTri" />
+          <ScalarProperty Name="TSNNSoLuong" ColumnName="TSNNSoLuong" />
+          <ScalarProperty Name="TSNNTen" ColumnName="TSNNTen" />
+          <ScalarProperty Name="TSNNID" ColumnName="TSNNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThuNhaps">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.ThuNhap">
+        <MappingFragment StoreEntitySet="ThuNhaps">
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="TNTien" ColumnName="TNTien" />
+          <ScalarProperty Name="TNTen" ColumnName="TNTen" />
+          <ScalarProperty Name="TNID" ColumnName="TNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GiaiTrinhs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.GiaiTrinh">
+        <MappingFragment StoreEntitySet="GiaiTrinhs">
+          <ScalarProperty Name="LGTID" ColumnName="LGTID" />
+          <ScalarProperty Name="KKID" ColumnName="KKID" />
+          <ScalarProperty Name="GTNoiDung" ColumnName="GTNoiDung" />
+          <ScalarProperty Name="GTIsTang" ColumnName="GTIsTang" />
+          <ScalarProperty Name="GTSoLuong" ColumnName="GTSoLuong" />
+          <ScalarProperty Name="GTID" ColumnName="GTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HeSoLuongs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.HeSoLuong">
+        <MappingFragment StoreEntitySet="HeSoLuongs">
+          <ScalarProperty Name="HSLHeSo" ColumnName="HSLHeSo" />
+          <ScalarProperty Name="NGID" ColumnName="NGID" />
+          <ScalarProperty Name="BLID" ColumnName="BLID" />
+          <ScalarProperty Name="HSLID" ColumnName="HSLID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanhGiaLaoDongs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.DanhGiaLaoDong">
+        <MappingFragment StoreEntitySet="DanhGiaLaoDongs">
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="DGLDNgay" ColumnName="DGLDNgay" />
+          <ScalarProperty Name="DGLDThongNhat" ColumnName="DGLDThongNhat" />
+          <ScalarProperty Name="DGLDYKien" ColumnName="DGLDYKien" />
+          <ScalarProperty Name="DGLDPhanLoai" ColumnName="DGLDPhanLoai" />
+          <ScalarProperty Name="DGLDUuDiem" ColumnName="DGLDUuDiem" />
+          <ScalarProperty Name="DGLDNghiaVu" ColumnName="DGLDNghiaVu" />
+          <ScalarProperty Name="DGLDTrachNhiem" ColumnName="DGLDTrachNhiem" />
+          <ScalarProperty Name="DGLDDaoDuc" ColumnName="DGLDDaoDuc" />
+          <ScalarProperty Name="DGLDKetQua" ColumnName="DGLDKetQua" />
+          <ScalarProperty Name="DGLDHeSoLuong" ColumnName="DGLDHeSoLuong" />
+          <ScalarProperty Name="DGLDBac" ColumnName="DGLDBac" />
+          <ScalarProperty Name="DGLDNgheNghiep" ColumnName="DGLDNgheNghiep" />
+          <ScalarProperty Name="DGLDDonVi" ColumnName="DGLDDonVi" />
+          <ScalarProperty Name="DGLDChucDanh" ColumnName="DGLDChucDanh" />
+          <ScalarProperty Name="DGLDNam" ColumnName="DGLDNam" />
+          <ScalarProperty Name="DGLDID" ColumnName="DGLDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanhGiaVienChucs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.DanhGiaVienChuc">
+        <MappingFragment StoreEntitySet="DanhGiaVienChucs">
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="DGVCNgay" ColumnName="DGVCNgay" />
+          <ScalarProperty Name="DGVCThongNhat" ColumnName="DGVCThongNhat" />
+          <ScalarProperty Name="DGVCYKien" ColumnName="DGVCYKien" />
+          <ScalarProperty Name="DGVCPhanLoai" ColumnName="DGVCPhanLoai" />
+          <ScalarProperty Name="DGVCUuDiem" ColumnName="DGVCUuDiem" />
+          <ScalarProperty Name="DGVCNghiaVu" ColumnName="DGVCNghiaVu" />
+          <ScalarProperty Name="DGVCTrachNhiem" ColumnName="DGVCTrachNhiem" />
+          <ScalarProperty Name="DGVCDaoDuc" ColumnName="DGVCDaoDuc" />
+          <ScalarProperty Name="DGVCKetQua" ColumnName="DGVCKetQua" />
+          <ScalarProperty Name="DGVCHeSoLuong" ColumnName="DGVCHeSoLuong" />
+          <ScalarProperty Name="DGVCBac" ColumnName="DGVCBac" />
+          <ScalarProperty Name="DGVCNgheNghiep" ColumnName="DGVCNgheNghiep" />
+          <ScalarProperty Name="DGVCDonVi" ColumnName="DGVCDonVi" />
+          <ScalarProperty Name="DGVCChucDanh" ColumnName="DGVCChucDanh" />
+          <ScalarProperty Name="DGVCNam" ColumnName="DGVCNam" />
+          <ScalarProperty Name="DGVCID" ColumnName="DGVCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanhGiaDangViens">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.DanhGiaDangVien">
+        <MappingFragment StoreEntitySet="DanhGiaDangViens">
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="DGDVNgayThang" ColumnName="DGDVNgayThang" />
+          <ScalarProperty Name="DGDVNam" ColumnName="DGDVNam" />
+          <ScalarProperty Name="DGDVDanhGia" ColumnName="DGDVDanhGia" />
+          <ScalarProperty Name="DGDVPhuongHuong" ColumnName="DGDVPhuongHuong" />
+          <ScalarProperty Name="DGDVKhuyetDiem" ColumnName="DGDVKhuyetDiem" />
+          <ScalarProperty Name="DGDVKetQuaKhacPhuc" ColumnName="DGDVKetQuaKhacPhuc" />
+          <ScalarProperty Name="DGDVUuDiem" ColumnName="DGDVUuDiem" />
+          <ScalarProperty Name="DGDVHeSoLuong" ColumnName="DGDVHeSoLuong" />
+          <ScalarProperty Name="DGDVBac" ColumnName="DGDVBac" />
+          <ScalarProperty Name="DGDVHangChucDanh" ColumnName="DGDVHangChucDanh" />
+          <ScalarProperty Name="DGDVChiBo" ColumnName="DGDVChiBo" />
+          <ScalarProperty Name="DGDVDonVi" ColumnName="DGDVDonVi" />
+          <ScalarProperty Name="DGDVChucVuChinhQuyen" ColumnName="DGDVChucVuChinhQuyen" />
+          <ScalarProperty Name="DGDVChucVuDang" ColumnName="DGDVChucVuDang" />
+          <ScalarProperty Name="DGDVID" ColumnName="DGDVID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.Account">
+        <MappingFragment StoreEntitySet="Accounts">
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="ACCUpDanhGia" ColumnName="ACCUpDanhGia" />
+          <ScalarProperty Name="ACCInDanhGia" ColumnName="ACCInDanhGia" />
+          <ScalarProperty Name="ACCUpKeKhai" ColumnName="ACCUpKeKhai" />
+          <ScalarProperty Name="ACCInKeKhai" ColumnName="ACCInKeKhai" />
+          <ScalarProperty Name="ACCInLyLich" ColumnName="ACCInLyLich" />
+          <ScalarProperty Name="ACCUpLyLich" ColumnName="ACCUpLyLich" />
+          <ScalarProperty Name="ACCUpThongTinCaNhan" ColumnName="ACCUpThongTinCaNhan" />
+          <ScalarProperty Name="ACCStatus" ColumnName="ACCStatus" />
+          <ScalarProperty Name="ACCChucNang" ColumnName="ACCChucNang" />
+          <ScalarProperty Name="ACCPassword" ColumnName="ACCPassword" />
+          <ScalarProperty Name="ACCEmail" ColumnName="ACCEmail" />
+          <ScalarProperty Name="ACCID" ColumnName="ACCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiChamCongs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.LoaiChamCong">
+        <MappingFragment StoreEntitySet="LoaiChamCong">
+          <ScalarProperty Name="LCCGhiChu" ColumnName="LCCGhiChu" />
+          <ScalarProperty Name="LCCKyHieu" ColumnName="LCCKyHieu" />
+          <ScalarProperty Name="LCCTen" ColumnName="LCCTen" />
+          <ScalarProperty Name="LCCID" ColumnName="LCCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhuTrachChamCongs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.PhuTrachChamCong">
+        <MappingFragment StoreEntitySet="PhuTrachChamCongs">
+          <ScalarProperty Name="PCCCStatus" ColumnName="PCCCStatus" />
+          <ScalarProperty Name="DVID" ColumnName="DVID" />
+          <ScalarProperty Name="ACCID" ColumnName="ACCID" />
+          <ScalarProperty Name="PTCCID" ColumnName="PTCCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChamCongs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.ChamCong">
+        <MappingFragment StoreEntitySet="ChamCongs">
+          <ScalarProperty Name="LCCID" ColumnName="LCCID" />
+          <ScalarProperty Name="CCDATE" ColumnName="CCDATE" />
+          <ScalarProperty Name="LVID" ColumnName="LVID" />
+          <ScalarProperty Name="CCID" ColumnName="CCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhanViens">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.NhanVien">
+        <MappingFragment StoreEntitySet="NhanViens">
+          <ScalarProperty Name="NVBHXH" ColumnName="NVBHXH" />
+          <ScalarProperty Name="NVNganh" ColumnName="NVNganh" />
+          <ScalarProperty Name="NVNoiSinh" ColumnName="NVNoiSinh" />
+          <ScalarProperty Name="NVQueQuan" ColumnName="NVQueQuan" />
+          <ScalarProperty Name="NVGioiTinh" ColumnName="NVGioiTinh" />
+          <ScalarProperty Name="NVHinh" ColumnName="NVHinh" />
+          <ScalarProperty Name="NVNgayCapCMND" ColumnName="NVNgayCapCMND" />
+          <ScalarProperty Name="NVCMND" ColumnName="NVCMND" />
+          <ScalarProperty Name="NMID" ColumnName="NMID" />
+          <ScalarProperty Name="NVCanNang" ColumnName="NVCanNang" />
+          <ScalarProperty Name="NVChieuCao" ColumnName="NVChieuCao" />
+          <ScalarProperty Name="NVTinhTrangSucKhoe" ColumnName="NVTinhTrangSucKhoe" />
+          <ScalarProperty Name="NVSoTruong" ColumnName="NVSoTruong" />
+          <ScalarProperty Name="QLNNID" ColumnName="QLNNID" />
+          <ScalarProperty Name="LLCTID" ColumnName="LLCTID" />
+          <ScalarProperty Name="CMID" ColumnName="CMID" />
+          <ScalarProperty Name="GDPTID" ColumnName="GDPTID" />
+          <ScalarProperty Name="NVNoiO" ColumnName="NVNoiO" />
+          <ScalarProperty Name="NVHoKhau" ColumnName="NVHoKhau" />
+          <ScalarProperty Name="TGID" ColumnName="TGID" />
+          <ScalarProperty Name="DTID" ColumnName="DTID" />
+          <ScalarProperty Name="NVNgaySinh" ColumnName="NVNgaySinh" />
+          <ScalarProperty Name="NVTenKhac" ColumnName="NVTenKhac" />
+          <ScalarProperty Name="NVTen" ColumnName="NVTen" />
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ngaches">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.Ngach">
+        <MappingFragment StoreEntitySet="Ngaches">
+          <ScalarProperty Name="NGMa" ColumnName="NGMa" />
+          <ScalarProperty Name="NGNamTangLuong" ColumnName="NGNamTangLuong" />
+          <ScalarProperty Name="NGNoiDung" ColumnName="NGNoiDung" />
+          <ScalarProperty Name="NGTen" ColumnName="NGTen" />
+          <ScalarProperty Name="NGID" ColumnName="NGID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LamViecs">
+      <EntityTypeMapping TypeName="EmployeeManagementModel.LamViec">
+        <MappingFragment StoreEntitySet="LamViecs">
+          <ScalarProperty Name="HSLID" ColumnName="HSLID" />
+          <ScalarProperty Name="LVNgayHopDong" ColumnName="LVNgayHopDong" />
+          <ScalarProperty Name="LVSoHopDong" ColumnName="LVSoHopDong" />
+          <ScalarProperty Name="LVSoNgayPhep" ColumnName="LVSoNgayPhep" />
+          <ScalarProperty Name="LVThuoc" ColumnName="LVThuoc" />
+          <ScalarProperty Name="LVTyLe" ColumnName="LVTyLe" />
+          <ScalarProperty Name="LVLuongCoBan" ColumnName="LVLuongCoBan" />
+          <ScalarProperty Name="LVPhuCapDocHai" ColumnName="LVPhuCapDocHai" />
+          <ScalarProperty Name="LVPhuCapVuotKhung" ColumnName="LVPhuCapVuotKhung" />
+          <ScalarProperty Name="LVPhuCapThamNienNghe" ColumnName="LVPhuCapThamNienNghe" />
+          <ScalarProperty Name="LVPhuCapNghe" ColumnName="LVPhuCapNghe" />
+          <ScalarProperty Name="LVPhuCapKiemNhiem" ColumnName="LVPhuCapKiemNhiem" />
+          <ScalarProperty Name="LVPhuCapCongVu" ColumnName="LVPhuCapCongVu" />
+          <ScalarProperty Name="LVPhuCapChucVu" ColumnName="LVPhuCapChucVu" />
+          <ScalarProperty Name="LVNhiemVu" ColumnName="LVNhiemVu" />
+          <ScalarProperty Name="CVID" ColumnName="CVID" />
+          <ScalarProperty Name="LVDenNgay" ColumnName="LVDenNgay" />
+          <ScalarProperty Name="LVTuNgay" ColumnName="LVTuNgay" />
+          <ScalarProperty Name="NVID" ColumnName="NVID" />
+          <ScalarProperty Name="DVID" ColumnName="DVID" />
+          <ScalarProperty Name="LVID" ColumnName="LVID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
